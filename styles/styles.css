@@ -322,6 +322,22 @@ section {
 .about-stats .progress-bars .progress-bar .progress-con .progress .data_analysis {
   width: 85%;
 }
+
+.about-stats .progress-bars .progress-bar .progress-con .progress .sql {
+  width: 70%;
+}
+
+.about-stats .progress-bars .progress-bar .progress-con .progress .machine_learning {
+  width: 70%;
+} 
+
+.about-stats .progress-bars .progress-bar .progress-con .progress .data-warngling {
+  width: 85%;
+}
+.about-stats .progress-bars .progress-bar .progress-con .progress .etl {
+  width: 75%;
+}
+
 .about-stats .progress-bars .progress-bar .progress-con .progress .bash {
   width: 75%;
 }
