@@ -8147,7 +8147,7 @@ a.text-dark:hover, a.text-dark:focus {
 body {
   font-family: "Poppins", Arial, sans-serif;
   background: #242424;
-  font-size: 16px;
+  font-size: 19px;
   line-height: 1.8;
   font-weight: 400;
   color: #999999; }
@@ -8717,9 +8717,12 @@ h1, h2, h3, h4, h5,
     margin-bottom: 0; }
   .page .heading {
     font-weight: 800;
-    font-size: 30px;
-    margin-bottom: 30px;
-    color: #FFAC00; }
+    font-size: 45px;
+    margin-bottom: 65px;
+    color: #FFAC00; 
+    text-decoration: underline;
+    text-align: center;
+}
 
 .resume-wrap {
   width: 100%;
@@ -9414,7 +9417,7 @@ textarea.form-control {
     border-radius: 50%; }
     .contact-section .box .icon span {
       color: #242424;
-      font-size: 30px; }
+      font-size: 60px; }
   .contact-section .box h3 {
     font-size: 18px;
     font-weight: 600; }
