@@ -9470,7 +9470,8 @@ textarea.form-control {
     border-radius: 50%; }
     .coding-profiles-section .box .icon span {
       color: #242424;
-      font-size: 60px; }
+/*      font-size: 60px; */
+    }
   .coding-profiles-section .box h3 {
     font-size: 18px;
     font-weight: 600; }
