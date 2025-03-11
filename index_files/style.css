@@ -8754,6 +8754,10 @@ h1, h2, h3, h4, h5,
     font-size: 18px;
     font-weight: 700;
     color: #6ec5b8; }
+    .resume-wrap .position2 {
+      font-size: 18px;
+      font-weight: 700;
+      color: #369232; }
 
 .ftco-partner {
   padding: 4em 0 !important; }
