@@ -9763,3 +9763,34 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+
+.skills-section {
+    position: relative;
+    left: 29%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 800px; /* Adjust width as needed */
+    padding: 20px;
+    background-color: #655A3D; /* Optional: Background color */
+    border-radius: 50px; /* Optional: Rounded corners */
+    font-family: Arial, sans-serif; /* Optional: Change font family */
+}
+
+.skills-section p {
+    font-size: 30px; /* Adjust paragraph size */
+    line-height: 1.6; /* Improve readability */
+    color: #2B2515; /* Set font color to brown */
+}
+
+.skills-section b {
+    font-size: 35px; /* Adjust paragraph size */
+    line-height: 1.6; /* Improve readability */
+    color: #1F2380; /* Set font color to brown */
+}
+
+.skills-section tit {
+    font-size: 70px; /* Adjust paragraph size */
+    line-height: 1.6; /* Improve readability */
+    color: #99BDA9; /* Set font color to brown */
+}
