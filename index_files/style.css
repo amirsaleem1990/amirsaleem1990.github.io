@@ -6641,10 +6641,19 @@ button.bg-dark:focus {
 .mr-4,
 .mx-4 {
   margin-right: 1.5rem !important; }
-
 .mb-4,
 .my-4 {
   margin-bottom: 1.5rem !important; }
+
+.mc-4 {
+  color: #A94BA9  !important;
+  font-size: 22px  !important;
+  margin-bottom: 2.5rem !important; 
+  font-weight: bold !important;
+  letter-spacing: 0.5px !important;
+  text-transform: capitalize !important;
+}
+
 
 .ml-4,
 .mx-4 {
