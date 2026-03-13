@@ -9803,3 +9803,8 @@ textarea.form-control {
     line-height: 1.6; /* Improve readability */
     color: #99BDA9; /* Set font color to brown */
 }
+
+/* Professional page background: visible gradient (top lighter → bottom darker) */
+body {
+    background: linear-gradient(to bottom, #454545 0%, #383838 25%, #2a2a2a 50%, #1e1e1e 75%, #141414 100%) fixed no-repeat !important;
+}

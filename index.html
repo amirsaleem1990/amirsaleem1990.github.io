@@ -5,9 +5,10 @@
         <title>Amir Saleem</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Amir Saleem – Data Scientist and Python Developer. LLM development, machine learning, data engineering. Islamabad, Pakistan.">
         <meta property="og:image" content="images/profile1.png">
         <meta property="og:title" content="Amir Saleem">
-        <meta property="og:description" content="Personal Site">
+        <meta property="og:description" content="Data Scientist and Python Developer. LLM development, ML, data engineering. Islamabad, Pakistan.">
         <link href="index_files/css.css" rel="stylesheet">
         <!-- <link rel="stylesheet" href="index_files/icomoon.css"> -->
         <!-- <link href="https://fonts.cdnfonts.com/css/icomoon" rel="stylesheet"> -->
@@ -15,7 +16,7 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="index_files/open-iconic-bootstrap.min.css">
         <link rel="stylesheet" href="index_files/animate.css">
-        <!-- <link rel="icon" href="https://pardeepkesnani.com/images/favicon.png"> -->
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
         <link rel="stylesheet" href="index_files/owl.carousel.min.css">
         <link rel="stylesheet" href="index_files/owl.theme.default.min.css">
         <link rel="stylesheet" href="index_files/magnific-popup.css">
@@ -32,58 +33,343 @@
                 51%, 100% { opacity: 0.3; }
             }
             a.navbar-brand.blink-resume {
-                animation: blink 1.5s ease-in-out infinite;
+                animation: blink 2s ease-in-out infinite;
+            }
+        </style>
+        <!-- Celiber font: add @font-face below if you have .woff2/.ttf files; otherwise Calibri/Segoe UI are used as fallbacks -->
+        <style type="text/css">
+            body, .ftco-heading-2, .heading, .nav-link, .position, .text p, .resume-wrap .text {
+                font-family: 'Celiber', Calibri, 'Segoe UI', sans-serif;
+            }
+        </style>
+        <!-- Hero section: modern typography, glassmorphism card, CTA buttons -->
+        <style type="text/css">
+            .hero-section {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: background-image 0.6s ease-in-out;
+            }
+            .hero-section .slider-text {
+                min-height: 80vh;
+            }
+            .hero-section .overlay {
+                width: 100%;
+                opacity: 0.6;
+                background: linear-gradient(135deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.4) 100%);
+            }
+            .hero-section .intro-box {
+                font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+                background: rgba(255, 255, 255, 0.08);
+                backdrop-filter: blur(12px);
+                -webkit-backdrop-filter: blur(12px);
+                border: 1px solid rgba(255, 255, 255, 0.15);
+                border-radius: 24px;
+                padding: 2.5rem 2rem;
+                max-width: 640px;
+                margin: 0 auto;
+                box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+            }
+            .hero-section .intro-box .subheading {
+                display: block;
+                text-transform: uppercase;
+                font-size: 0.95rem;
+                font-weight: 600;
+                letter-spacing: 3px;
+                color: rgba(255, 255, 255, 0.9);
+                margin-bottom: 0.5rem;
+            }
+            .hero-section .intro-box h1 {
+                font-size: 4rem;
+                font-weight: 800;
+                letter-spacing: -2px;
+                line-height: 1.1;
+                color: #fff;
+                margin-bottom: 0.5rem;
+            }
+            .hero-section .intro-box h2 {
+                font-size: 1.5rem;
+                font-weight: 600;
+                color: rgba(255, 255, 255, 0.95);
+                margin-bottom: 0;
+            }
+            .hero-section .intro-box h2 span {
+                color: #F96D00;
+                text-transform: uppercase;
+                font-weight: 600;
+            }
+            .hero-section .hero-tagline {
+                font-size: 1.05rem;
+                color: rgba(255, 255, 255, 0.85);
+                font-weight: 400;
+                margin-top: 1rem;
+            }
+            .hero-section .hero-location {
+                font-size: 0.95rem;
+                color: rgba(255, 255, 255, 0.75);
+                margin-top: 0.25rem;
+            }
+            .hero-section .hero-location i {
+                margin-right: 0.35rem;
+                opacity: 0.9;
+            }
+            .hero-section .hero-ctas {
+                margin-top: 1.75rem;
+                margin-bottom: 0;
+            }
+            .hero-section .hero-ctas .btn {
+                margin-bottom: 0.5rem;
+                transition: transform 0.2s ease, box-shadow 0.2s ease;
+            }
+            .hero-section .hero-ctas .btn:not(:last-child) {
+                margin-right: 0.5rem;
+            }
+            .hero-section .hero-ctas .btn:hover {
+                transform: translateY(-3px);
+                box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+            }
+            .hero-section .hero-btn-primary {
+                background: #F96D00 !important;
+                border-color: #F96D00 !important;
+                color: #fff !important;
+            }
+            .hero-section .hero-btn-primary:hover {
+                background: #e06300 !important;
+                border-color: #e06300 !important;
+                color: #fff !important;
+            }
+            .hero-section .hero-btn-outline {
+                border: 2px solid rgba(255, 255, 255, 0.8) !important;
+                background: transparent !important;
+                color: #fff !important;
+            }
+            .hero-section .hero-btn-outline:hover {
+                border-color: #fff !important;
+                background: rgba(255, 255, 255, 0.15) !important;
+                color: #fff !important;
+            }
+            @media (max-width: 767.98px) {
+                .hero-section .intro-box h1 { font-size: 2.5rem; }
+                .hero-section .intro-box { padding: 1.75rem 1.25rem; }
+            }
+        </style>
+        <!-- Professional polish: visible gradient background (top lighter, bottom darker) -->
+        <style type="text/css">
+            html { min-height: 100%; }
+            body {
+                min-height: 100vh;
+                background: linear-gradient(to bottom, #454545 0%, #383838 25%, #2a2a2a 50%, #1e1e1e 75%, #141414 100%) fixed no-repeat !important;
+            }
+            .hero-section {
+                background: linear-gradient(165deg, #3d3d3d 0%, #2a2a2a 50%, #1a1a1a 100%) !important;
+            }
+            .ftco-section { background: transparent !important; }
+            .ftco-footer {
+                background: #0d0d0d !important;
+                border-top: 1px solid rgba(255, 255, 255, 0.08);
+            }
+            /* Certifications: two columns, row order 55|54, 53|52, 51|50, ... */
+            .certifications-grid {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 1.25rem 2.5rem;
+            }
+            .certifications-grid .resume-wrap { margin-bottom: 0; }
+            @media (max-width: 767.98px) {
+                .certifications-grid { grid-template-columns: 1fr; }
+            }
+        </style>
+        <!-- Professional header / navbar -->
+        <style type="text/css">
+            .site-header {
+                background: rgba(18, 18, 18, 0.95) !important;
+                backdrop-filter: blur(10px);
+                -webkit-backdrop-filter: blur(10px);
+                border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+                padding: 0;
+            }
+            .site-header .container {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: space-between;
+                max-width: 1140px;
+                margin: 0 auto;
+                padding: 0 1rem;
+            }
+            .site-header .header-brand {
+                font-size: 1.25rem;
+                font-weight: 700;
+                letter-spacing: -0.02em;
+                color: #fff !important;
+                padding: 0.85rem 0;
+                margin-right: 1rem;
+            }
+            .site-header .header-brand:hover {
+                color: rgba(255, 255, 255, 0.9) !important;
+            }
+            .site-header .header-resume-btn {
+                display: inline-block;
+                font-size: 0.875rem;
+                font-weight: 600;
+                padding: 0.5rem 1rem;
+                margin-left: 1rem;
+                color: #F96D00 !important;
+                border: 1px solid #F96D00;
+                border-radius: 6px;
+                text-decoration: none !important;
+                transition: background 0.2s ease, color 0.2s ease;
+                white-space: nowrap;
+            }
+            .site-header .header-resume-btn:hover {
+                background: #F96D00;
+                color: #fff !important;
+            }
+            .site-header .header-nav .nav-item .nav-link {
+                font-size: 0.9rem;
+                font-weight: 500;
+                padding: 0.85rem 0.75rem !important;
+                color: rgba(255, 255, 255, 0.85) !important;
+                letter-spacing: 0.01em;
+            }
+            .site-header .header-nav .nav-item .nav-link:hover,
+            .site-header .header-nav .nav-item .nav-link:focus {
+                color: #fff !important;
+            }
+            .site-header .header-nav .nav-item .nav-link span:before {
+                background: #F96D00;
+            }
+            .site-header .navbar-toggler {
+                border-color: rgba(255, 255, 255, 0.3);
+                padding: 0.4rem 0.6rem;
+            }
+            .site-header .navbar-toggler .oi-menu {
+                font-size: 1.25rem;
+            }
+            .site-header .header-menu-text {
+                font-size: 0.9rem;
+                margin-left: 0.35rem;
+            }
+            @media (min-width: 992px) {
+                .site-header .navbar-collapse {
+                    display: flex !important;
+                    align-items: center;
+                    flex-grow: 1;
+                    justify-content: flex-end;
+                }
+                .site-header .header-nav { margin-right: 0; }
+                .site-header .header-nav .nav-item .nav-link { padding-left: 1rem !important; padding-right: 1rem !important; }
+            }
+            @media (max-width: 991.98px) {
+                .site-header { background: #1a1a1a !important; padding: 0.5rem 0; }
+                .site-header .header-resume-btn { margin: 1rem 0 0 0; padding: 0.6rem 1rem; width: 100%; text-align: center; }
+                .site-header .container { flex-direction: column; align-items: flex-start; }
+                .site-header .navbar-collapse { width: 100%; }
+                .site-header .header-nav .nav-item .nav-link { padding: 0.6rem 0 !important; border-bottom: 1px solid rgba(255,255,255,0.06); }
+            }
+            /* Email contact: show copyable email on hover */
+            .email-contact-box .email-contact-address {
+                display: none;
+                font-size: 0.95rem;
+                word-break: break-all;
+                cursor: pointer;
+                user-select: all;
+                -webkit-user-select: all;
+                color: #F96D00;
+            }
+            .email-contact-box:hover .email-contact-address {
+                display: inline;
+            }
+            .email-contact-box .email-copied-msg {
+                display: none;
+                font-size: 0.85rem;
+                color: #56CE5E;
+            }
+            .email-contact-box.email-copied .email-contact-address { display: none; }
+            .email-contact-box.email-copied .email-copied-msg { display: inline; }
+            /* Section titles: same yellow for all (Experience, Certifications, Skills, Projects, Coding Profiles, Let's Connect) */
+            .page .heading,
+            .heading-section h2 {
+                color: #FFAC00 !important;
+            }
+            /* Accessibility: skip link (visible on focus) */
+            .skip-link {
+                position: absolute;
+                top: -3rem;
+                left: 0.5rem;
+                padding: 0.5rem 1rem;
+                background: #F96D00;
+                color: #fff !important;
+                font-weight: 600;
+                z-index: 100;
+                border-radius: 4px;
+                transition: top 0.2s ease;
+            }
+            .skip-link:focus {
+                top: 0.5rem;
+                outline: 2px solid #fff;
+                outline-offset: 2px;
+            }
+            /* Accessibility: visible focus for keyboard users */
+            .site-header a:focus-visible,
+            .site-header button:focus-visible,
+            .hero-section .btn:focus-visible,
+            .email-contact-address:focus-visible {
+                outline: 2px solid #F96D00;
+                outline-offset: 2px;
+            }
+            .contact-info a:focus-visible,
+            .contact-info .box:focus-within {
+                outline: 2px solid #F96D00;
+                outline-offset: 2px;
             }
         </style>
     </head>
     <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300" data-aos-easing="slide" data-aos-duration="800" data-aos-delay="0" data-new-gr-c-s-check-loaded="8.903.0" data-gr-ext-installed="">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark ftco_navbar ftco-navbar-light site-navbar-target sleep" id="ftco-navbar">
+        <a href="#main-content" class="skip-link">Skip to main content</a>
+        <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target sleep site-header" id="ftco-navbar">
             <div class="container">
-                <a class="navbar-brand blink-resume" href="AmirSaleem_DataScience_Resume.pdf" target="_blank">Resume</a>
-                <!-- <a class="navbar-brand" href="">Amir Saleem</a> -->
+                <a class="navbar-brand header-brand" href="#home-section">Amir Saleem</a>
                 <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="oi oi-menu"></span> Menu
+                    <span class="oi oi-menu"></span><span class="header-menu-text"> Menu</span>
                 </button>
                 <div class="collapse navbar-collapse" id="ftco-nav">
-                    <ul class="navbar-nav nav ml-auto">
-                        <li class="nav-item"><a href="#home-section"            class="nav-link"><span>Home</span></a></li>
-                        <li class="nav-item"><a href="#experience-section"      class="nav-link"><span>Experience</span></a></li>
-                        <li class="nav-item"><a href="#certifications-section"  class="nav-link"><span>Certifications</span></a></li>
-                        <li class="nav-item"><a href="#skills-section"          class="nav-link"><span>Skills</span></a></li>
-                        <li class="nav-item"><a href="#project-section"         class="nav-link"><span>Projects</span></a></li>
+                    <ul class="navbar-nav nav ml-auto header-nav">
+                        <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+                        <li class="nav-item"><a href="#experience-section" class="nav-link"><span>Experience</span></a></li>
+                        <li class="nav-item"><a href="#certifications-section" class="nav-link"><span>Certifications</span></a></li>
+                        <li class="nav-item"><a href="#skills-section" class="nav-link"><span>Skills</span></a></li>
+                        <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
                         <li class="nav-item"><a href="#coding-profiles-section" class="nav-link"><span>Coding Profiles</span></a></li>
-                        <li class="nav-item"><a href="#contact-section"         class="nav-link"><span>Contact</span></a></li>
+                        <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
                     </ul>
+                    <a class="header-resume-btn blink-resume" href="AmirSaleem_DataScience_Resume.pdf" target="_blank">Resume</a>
                 </div>
             </div>
         </nav>
-        <section class="hero-wrap js-fullheight" style="height: 926px;">
+        <section id="home-section" class="hero-wrap hero-section js-fullheight" style="height: 926px;">
             <div class="overlay"></div>
-            <div class="skills-section">
-                <h2 class="ftco-heading-2"><center><tit>Amir Saleem</tit></center></h2>
-                <p>
-                    <b color="red">Data Scientist</b> and <b color="red">Python Developer</b> with <b color="red">7 years</b> of experience in data analysis, data engineering, and machine learning. Proven
-                    ability to transform raw data into actionable insights using data wrangling, feature engineering, and predictive modeling. Proficient in Python
-                    and SQL. Passionate about solving complex problems using data-driven approaches. Certified in data analysis, programming, machine
-                    learning, and data engineering.
-                </p>
-            </div>
-            <!-- <div class="container">
-                <div class="row no-gutters slider-text js-fullheight justify-content-center align-items-center" style="height: 926px;">
-                    <div class="col-lg-8 col-md-6 ftco-animate d-flex align-items-center fadeInUp ftco-animated">
-                        <div class="text text-center">
-                            <span class="subheading">Hi! I am </span>
-                            <br><img src="images/profile1.png" alt="Avatar" width="200" height="228">
-                            <h1>Amir Saleem</h1>
-                            <h2>I am a Data
-                                <span class="txt-rotate" data-period="2000" data-rotate="[ &quot; Scientist.&quot;,&quot; Analyst.&quot;,&quot; Engineer.&quot]"><span class="wrap"> An</span></span>
-                            </h2>
+            <div class="container">
+                <div class="row no-gutters slider-text align-items-center justify-content-center">
+                    <div class="col-md-10 text-center">
+                        <div class="intro-box">
+                            <span class="subheading">Hello! I am</span>
+                            <h1 class="mb-4">Amir Saleem</h1>
+                            <h2 class="mb-4">I'm a <span>Data Scientist</span></h2>
+                            <p class="hero-tagline mb-4">Transforming raw data into actionable insights with Python, SQL &amp; machine learning.</p>
+                            <p class="hero-location mb-4"><i class="fas fa-map-marker-alt"></i> Islamabad, Pakistan</p>
+                            <p class="hero-ctas">
+                                <a href="#project-section" class="btn btn-primary py-3 px-4 hero-btn-primary">View Portfolio</a>
+                                <a href="#experience-section" class="btn btn-white btn-outline-white py-3 px-4 hero-btn-outline">Experience</a>
+                                <a href="#contact-section" class="btn btn-white btn-outline-white py-3 px-4 hero-btn-outline">Contact Me</a>
+                            </p>
                         </div>
                     </div>
                 </div>
-            </div> -->
+            </div>
             <div class="glyphicon glyphicon-arrow-down"></div>
         </section>
+        <main id="main-content">
         <!--     <section class="ftco-about img ftco-section ftco-no-pt ftco-no-pb" id="skills-section">
             <div class="container">
             	<div class="row d-flex no-gutters">
@@ -149,14 +435,15 @@
                             <span class="position2">Remote (USA)</span>
 
                             </a>
-                            <p class="date">Nov 2023 - Present</p>
+                            <p class="date">Nov 2023 - Mar 2026<br>(2 years, 5 months)</p>
                             <ul>
-                                <li>Currently working on an LLM with millions of users: Gather data, formulate complex questions, develop code solutions, and collaborate
-                                    with the LLM to enhance its capabilities by identifying errors and providing feedback.</li>
-                                <li>Engage in collaborative data analysis, independently explore datasets, and craft complex inquiries covering EDA, statistics, ML, logic,
-                                    and open-ended questions.</li>
-                                <li>Develop code solutions and collaborate with colleagues to compare and validate results. Identify and flag questions with code solutions
-                                    to refine LLM training, enhancing accuracy and performance.</li>
+                                <li><span style="color: #8FA333; font-weight: bold;">LLM Development & Data Collaboration: </span>Gathered and analyzed data, formulated complex questions across EDA, statistics, ML, logic, and open-ended domains, and developed code solutions. Collaborated with the LLM to enhance performance by identifying errors and providing feedback, and worked with colleagues to validate results and refine model training.</li>
+
+                                <li><span style="color: #8FA333; font-weight: bold;">AI Evaluation & SWE-Bench: </span>Evaluated LLM-generated code using rigorous rubrics and engineered "bug-planting" scenarios in production-grade codebases to benchmark debugging capabilities.</li>
+
+                                <li><span style="color: #8FA333; font-weight: bold;">Data Synthesis & Visualization </span>Collaborated with a team to generate a dataset of 100,000+ plots, enhancing LLM proficiency in producing accurate data visualizations.</li>
+
+                                <li><span style="color: #8FA333; font-weight: bold;">Distributed Collaboration: </span>Contributed to high-impact projects within large-scale, cross-functional remote teams.</li>
                             </ul>
                         </div>
                     </div>
@@ -289,6 +576,7 @@
                 <div id="certifications-section">
                     <div id="page-5" class="page five">
                         <h2 class="heading">Certifications</h2>
+                        <div class="certifications-grid">
                         <div class="resume-wrap d-flex ftco-animate fadeInUp ftco-animated">
                             <div class="icon d-flex align-items-center justify-content-center">
                                 <span class="flaticon-learning">
@@ -296,7 +584,7 @@
                                 </span>
                             </div>
                             <div class="text pl-3">
-                                <h2>55- SQL</h2>
+                                <h2>SQL</h2>
                                 <span class="position">hackerrank</span>
                                 <br>
                                 <span><strong>Issued:</strong></span>
@@ -314,7 +602,7 @@
                                 </span>
                             </div>
                             <div class="text pl-3">
-                                <h2>54- SQL</h2>
+                                <h2>SQL</h2>
                                 <span class="position">hackerrank</span>
                                 <br>
                                 <span><strong>Issued:</strong></span>
@@ -332,7 +620,7 @@
                                 </span>
                             </div>
                             <div class="text pl-3">
-                                <h2>53- Fundamentals of Visualization with Tableau</h2>
+                                <h2>Fundamentals of Visualization with Tableau</h2>
                                 <span class="position">University of California, Davis</span>
                                 <br>
                                 <span><strong>Issued:</strong></span>
@@ -350,7 +638,7 @@
                                 </span>
                             </div>
                             <div class="text pl-3">
-                                <h2>52- Essential Design Principles for Tableau</h2>
+                                <h2>Essential Design Principles for Tableau</h2>
                                 <span class="position">University of California, Davis</span>
                                 <br>
                                 <span><strong>Issued:</strong></span>
@@ -368,7 +656,7 @@
                                 </span>
                             </div>
                             <div class="text pl-3">
-                                <h2>51- Visual Analytics with Tableau</h2>
+                                <h2>Visual Analytics with Tableau</h2>
                                 <span class="position">University of California, Davis</span>
                                 <br>
                                 <span><strong>Issued:</strong></span>
@@ -386,7 +674,7 @@
                                 </span>
                             </div>
                             <div class="text pl-3">
-                                <h2>50- Python</h2>
+                                <h2>Python</h2>
                                 <span class="position">Hackerrank</span>
                                 <br>
                                 <span><strong>Issued:</strong></span>
@@ -404,7 +692,7 @@
                                 </span>
                             </div>
                             <div class="text pl-3">
-                                <h2>49- Introduction to Big Data with Spark and Hadoop</h2>
+                                <h2>Introduction to Big Data with Spark and Hadoop</h2>
                                 <span class="position">IBM Skills Network</span>
                                 <br>
                                 <span><strong>Issued:</strong></span>
@@ -422,7 +710,7 @@
                                 </span>
                             </div>
                             <div class="text pl-3">
-                                <h2>48- Python for Data Science, AI & Development</h2>
+                                <h2>Python for Data Science, AI & Development</h2>
                                 <span class="position">IBM Skills Network</span>
                                 <br>
                                 <span><strong>Issued:</strong></span>
@@ -440,7 +728,7 @@
                                 </span>
                             </div>
                             <div class="text pl-3">
-                                <h2>47- Python Project for Data Engineering</h2>
+                                <h2>Python Project for Data Engineering</h2>
                                 <span class="position">IBM Skills Network</span>
                                 <br>
                                 <span><strong>Issued:</strong></span>
@@ -458,7 +746,7 @@
                                 </span>
                             </div>
                             <div class="text pl-3">
-                                <h2>46- Databases and SQL for Data Science with Python</h2>
+                                <h2>Databases and SQL for Data Science with Python</h2>
                                 <span class="position">IBM Skills Network</span>
                                 <br>
                                 <span><strong>Issued:</strong></span>
@@ -476,7 +764,7 @@
                                 </span>
                             </div>
                             <div class="text pl-3">
-                                <h2>45- Hands-on Introduction to Linux Commands and Shell Scripting</h2>
+                                <h2>Hands-on Introduction to Linux Commands and Shell Scripting</h2>
                                 <span class="position">IBM Skills Network</span>
                                 <br>
                                 <span><strong>Issued:</strong></span>
@@ -494,7 +782,7 @@
                                 </span>
                             </div>
                             <div class="text pl-3">
-                                <h2>44- Relational Database Administration (DBA)</h2>
+                                <h2>Relational Database Administration (DBA)</h2>
                                 <span class="position">IBM Skills Network</span>
                                 <br>
                                 <span><strong>Issued:</strong></span>
@@ -512,7 +800,7 @@
                                 </span>
                             </div>
                             <div class="text pl-3">
-                                <h2>43- ETL and Data Pipelines with Shell, Airflow and Kafka</h2>
+                                <h2>ETL and Data Pipelines with Shell, Airflow and Kafka</h2>
                                 <span class="position">IBM Skills Network</span>
                                 <br>
                                 <span><strong>Issued:</strong></span>
@@ -530,7 +818,7 @@
                                 </span>
                             </div>
                             <div class="text pl-3">
-                                <h2>42- Getting Started with Data Warehousing and BI Analytics</h2>
+                                <h2>Getting Started with Data Warehousing and BI Analytics</h2>
                                 <span class="position">IBM Skills Network</span>
                                 <br>
                                 <span><strong>Issued:</strong></span>
@@ -548,7 +836,7 @@
                                 </span>
                             </div>
                             <div class="text pl-3">
-                                <h2>41- Introduction to NoSQL Databases</h2>
+                                <h2>Introduction to NoSQL Databases</h2>
                                 <span class="position">IBM Skills Network</span>
                                 <br>
                                 <span><strong>Issued:</strong></span>
@@ -566,7 +854,7 @@
                                 </span>
                             </div>
                             <div class="text pl-3">
-                                <h2>40- Introduction to Statistics</h2>
+                                <h2>Introduction to Statistics</h2>
                                 <span class="position">Stanfor University</span>
                                 <br>
                                 <span><strong>Issued:</strong></span>
@@ -584,7 +872,7 @@
                                 </span>
                             </div>
                             <div class="text pl-3">
-                                <h2>39- How Google does Machine Learning</h2>
+                                <h2>How Google does Machine Learning</h2>
                                 <span class="position">Google Cloud</span>
                                 <br>
                                 <span><strong>Issued:</strong></span>
@@ -602,7 +890,7 @@
                                 </span>
                             </div>
                             <div class="text pl-3">
-                                <h2>38- Google Cloud Big Data and Machine Learning Fundamentals</h2>
+                                <h2>Google Cloud Big Data and Machine Learning Fundamentals</h2>
                                 <span class="position">Google Cloud</span>
                                 <br>
                                 <span><strong>Issued:</strong></span>
@@ -620,7 +908,7 @@
                                 </span>
                             </div>
                             <div class="text pl-3">
-                                <h2>37- Introduction to Data Engineering</h2>
+                                <h2>Introduction to Data Engineering</h2>
                                 <span class="position">IBM Skills Network</span>
                                 <br>
                                 <span><strong>Issued:</strong></span>
@@ -638,7 +926,7 @@
                                 </span>
                             </div>
                             <div class="text pl-3">
-                                <h2>36- Introduction to Relational Databases (RDBMS)</h2>
+                                <h2>Introduction to Relational Databases (RDBMS)</h2>
                                 <span class="position">IBM Skills Network</span>
                                 <br>
                                 <span><strong>Issued:</strong></span>
@@ -656,7 +944,7 @@
                                 </span>
                             </div>
                             <div class="text pl-3">
-                                <h2>35- Google Data Analytics (Professional Certificate)</h2>
+                                <h2>Google Data Analytics (Professional Certificate)</h2>
                                 <span class="position">Google</span>
                                 <br>
                                 <span><strong>Issued:</strong></span>
@@ -674,7 +962,7 @@
                                 </span>
                             </div>
                             <div class="text pl-3">
-                                <h2>34- Foundations: Data, Data, Everywhere</h2>
+                                <h2>Foundations: Data, Data, Everywhere</h2>
                                 <span class="position">Google</span>
                                 <br>
                                 <span><strong>Issued:</strong></span>
@@ -692,7 +980,7 @@
                                 </span>
                             </div>
                             <div class="text pl-3">
-                                <h2>33- Share Data Through the Art of Visualization</h2>
+                                <h2>Share Data Through the Art of Visualization</h2>
                                 <span class="position">Google</span>
                                 <br>
                                 <span><strong>Issued:</strong></span>
@@ -710,7 +998,7 @@
                                 </span>
                             </div>
                             <div class="text pl-3">
-                                <h2>32- Ask Questions to Make Data-Driven Decisions</h2>
+                                <h2>Ask Questions to Make Data-Driven Decisions</h2>
                                 <span class="position">Google</span>
                                 <br>
                                 <span><strong>Issued:</strong></span>
@@ -728,7 +1016,7 @@
                                 </span>
                             </div>
                             <div class="text pl-3">
-                                <h2>31- Prepare Data for Exploration</h2>
+                                <h2>Prepare Data for Exploration</h2>
                                 <span class="position">Google</span>
                                 <br>
                                 <span><strong>Issued:</strong></span>
@@ -746,7 +1034,7 @@
                                 </span>
                             </div>
                             <div class="text pl-3">
-                                <h2>30- Data Analysis with R Programming</h2>
+                                <h2>Data Analysis with R Programming</h2>
                                 <span class="position">Google</span>
                                 <br>
                                 <span><strong>Issued:</strong></span>
@@ -764,7 +1052,7 @@
                                 </span>
                             </div>
                             <div class="text pl-3">
-                                <h2>29- Google Data Analytics Capstone: Complete a Case Study</h2>
+                                <h2>Google Data Analytics Capstone: Complete a Case Study</h2>
                                 <span class="position">Google</span>
                                 <br>
                                 <span><strong>Issued:</strong></span>
@@ -782,7 +1070,7 @@
                                 </span>
                             </div>
                             <div class="text pl-3">
-                                <h2>28- Process Data from Dirty to Clean</h2>
+                                <h2>Process Data from Dirty to Clean</h2>
                                 <span class="position">Google</span>
                                 <br>
                                 <span><strong>Issued:</strong></span>
@@ -800,7 +1088,7 @@
                                 </span>
                             </div>
                             <div class="text pl-3">
-                                <h2>27- Python Project: pillow, tesseract, and opencv</h2>
+                                <h2>Python Project: pillow, tesseract, and opencv</h2>
                                 <span class="position">University of Michigan</span>
                                 <br>
                                 <span><strong>Issued:</strong></span>
@@ -818,7 +1106,7 @@
                                 </span>
                             </div>
                             <div class="text pl-3">
-                                <h2>26- Python 3 Programming (Specialization)</h2>
+                                <h2>Python 3 Programming (Specialization)</h2>
                                 <span class="position">University of Michigan</span>
                                 <br>
                                 <span><strong>Issued:</strong></span>
@@ -836,7 +1124,7 @@
                                 </span>
                             </div>
                             <div class="text pl-3">
-                                <h2>25- Introduction to Probability and Data with R</h2>
+                                <h2>Introduction to Probability and Data with R</h2>
                                 <span class="position">Duke University</span>
                                 <br>
                                 <span><strong>Issued:</strong></span>
@@ -854,7 +1142,7 @@
                                 </span>
                             </div>
                             <div class="text pl-3">
-                                <h2>24- Using Python to Access Web Data</h2>
+                                <h2>Using Python to Access Web Data</h2>
                                 <span class="position">University of Michigan</span>
                                 <br>
                                 <span><strong>Issued:</strong></span>
@@ -872,7 +1160,7 @@
                                 </span>
                             </div>
                             <div class="text pl-3">
-                                <h2>23- Using Databases with Python</h2>
+                                <h2>Using Databases with Python</h2>
                                 <span class="position">University of Michigan</span>
                                 <br>
                                 <span><strong>Issued:</strong></span>
@@ -890,7 +1178,7 @@
                                 </span>
                             </div>
                             <div class="text pl-3">
-                                <h2>22- Capstone: Retrieving, Processing, and Visualizing Data with Python</h2>
+                                <h2>Capstone: Retrieving, Processing, and Visualizing Data with Python</h2>
                                 <span class="position">University of Michigan</span>
                                 <br>
                                 <span><strong>Issued:</strong></span>
@@ -908,7 +1196,7 @@
                                 </span>
                             </div>
                             <div class="text pl-3">
-                                <h2>21- Python</h2>
+                                <h2>Python</h2>
                                 <span class="position">University of Michigan</span>
                                 <br>
                                 <span><strong>Issued:</strong></span>
@@ -926,7 +1214,7 @@
                                 </span>
                             </div>
                             <div class="text pl-3">
-                                <h2>20- Data Collection and Processing with Python</h2>
+                                <h2>Data Collection and Processing with Python</h2>
                                 <span class="position">University of Michigan</span>
                                 <br>
                                 <span><strong>Issued:</strong></span>
@@ -944,7 +1232,7 @@
                                 </span>
                             </div>
                             <div class="text pl-3">
-                                <h2>19- Python Functions, Files, and Dictionaries</h2>
+                                <h2>Python Functions, Files, and Dictionaries</h2>
                                 <span class="position">University of Michigan</span>
                                 <br>
                                 <span><strong>Issued:</strong></span>
@@ -962,7 +1250,7 @@
                                 </span>
                             </div>
                             <div class="text pl-3">
-                                <h2>18- Python Classes and Inheritance</h2>
+                                <h2>Python Classes and Inheritance</h2>
                                 <span class="position">University of Michigan</span>
                                 <br>
                                 <span><strong>Issued:</strong></span>
@@ -980,7 +1268,7 @@
                                 </span>
                             </div>
                             <div class="text pl-3">
-                                <h2>17- Python for Everybody (Specialization)</h2>
+                                <h2>Python for Everybody (Specialization)</h2>
                                 <span class="position">University of Michigan</span>
                                 <br>
                                 <span><strong>Issued:</strong></span>
@@ -998,7 +1286,7 @@
                                 </span>
                             </div>
                             <div class="text pl-3">
-                                <h2>16- Programming for Everybody (Getting Started with Python)</h2>
+                                <h2>Programming for Everybody (Getting Started with Python)</h2>
                                 <span class="position">University of Michigan</span>
                                 <br>
                                 <span><strong>Issued:</strong></span>
@@ -1016,7 +1304,7 @@
                                 </span>
                             </div>
                             <div class="text pl-3">
-                                <h2>15- Python Data Structures</h2>
+                                <h2>Python Data Structures</h2>
                                 <span class="position">University of Michigan</span>
                                 <br>
                                 <span><strong>Issued:</strong></span>
@@ -1034,7 +1322,7 @@
                                 </span>
                             </div>
                             <div class="text pl-3">
-                                <h2>14- Linux for Developers</h2>
+                                <h2>Linux for Developers</h2>
                                 <span class="position">The Linux Foundation</span>
                                 <br>
                                 <span><strong>Issued:</strong></span>
@@ -1052,7 +1340,7 @@
                                 </span>
                             </div>
                             <div class="text pl-3">
-                                <h2>13- Linux Server Management and Security</h2>
+                                <h2>Linux Server Management and Security</h2>
                                 <span class="position">University of Colorado System</span>
                                 <br>
                                 <span><strong>Issued:</strong></span>
@@ -1070,7 +1358,7 @@
                                 </span>
                             </div>
                             <div class="text pl-3">
-                                <h2>12- Analyzing Police Activity with pandas</h2>
+                                <h2>Analyzing Police Activity with pandas</h2>
                                 <span class="position">datacamp</span>
                                 <br>
                                 <span><strong>Issued:</strong></span>
@@ -1088,7 +1376,7 @@
                                 </span>
                             </div>
                             <div class="text pl-3">
-                                <h2>11- Introduction to Applied Machine Learning</h2>
+                                <h2>Introduction to Applied Machine Learning</h2>
                                 <span class="position">Alberta Machine Intelligence Intitute</span>
                                 <br>
                                 <span><strong>Issued:</strong></span>
@@ -1106,7 +1394,7 @@
                                 </span>
                             </div>
                             <div class="text pl-3">
-                                <h2>10- Machine Learning Algorithms: Supervised Learning Tip to Tail</h2>
+                                <h2>Machine Learning Algorithms: Supervised Learning Tip to Tail</h2>
                                 <span class="position">Alberta Machine Intelligence Intitute</span>
                                 <br>
                                 <span><strong>Issued:</strong></span>
@@ -1124,7 +1412,7 @@
                                 </span>
                             </div>
                             <div class="text pl-3">
-                                <h2>9- Data for Machine Learning</h2>
+                                <h2>Data for Machine Learning</h2>
                                 <span class="position">Alberta Machine Intelligence Intitute</span>
                                 <br>
                                 <span><strong>Issued:</strong></span>
@@ -1142,7 +1430,7 @@
                                 </span>
                             </div>
                             <div class="text pl-3">
-                                <h2>8- R Programming</h2>
+                                <h2>R Programming</h2>
                                 <span class="position">John Hopkins University</span>
                                 <br>
                                 <span><strong>Issued:</strong></span>
@@ -1160,7 +1448,7 @@
                                 </span>
                             </div>
                             <div class="text pl-3">
-                                <h2>7- Exploratory Data Analysis</h2>
+                                <h2>Exploratory Data Analysis</h2>
                                 <span class="position">John Hopkins University</span>
                                 <br>
                                 <span><strong>Issued:</strong></span>
@@ -1178,7 +1466,7 @@
                                 </span>
                             </div>
                             <div class="text pl-3">
-                                <h2>6- Getting and Cleaning Data</h2>
+                                <h2>Getting and Cleaning Data</h2>
                                 <span class="position">John Hopkins University</span>
                                 <br>
                                 <span><strong>Issued:</strong></span>
@@ -1196,7 +1484,7 @@
                                 </span>
                             </div>
                             <div class="text pl-3">
-                                <h2>5- The Data Scientist’s Toolbox</h2>
+                                <h2>The Data Scientist’s Toolbox</h2>
                                 <span class="position">John Hopkins University</span>
                                 <br>
                                 <span><strong>Issued:</strong></span>
@@ -1214,7 +1502,7 @@
                                 </span>
                             </div>
                             <div class="text pl-3">
-                                <h2>4- Excel Skills for Business: Essentials</h2>
+                                <h2>Excel Skills for Business: Essentials</h2>
                                 <span class="position">Macquarie University</span>
                                 <br>
                                 <span><strong>Issued:</strong></span>
@@ -1232,7 +1520,7 @@
                                 </span>
                             </div>
                             <div class="text pl-3">
-                                <h2>3- Excel Skills for Business: Intermediate I</h2>
+                                <h2>Excel Skills for Business: Intermediate I</h2>
                                 <span class="position">Macquarie University</span>
                                 <br>
                                 <span><strong>Issued:</strong></span>
@@ -1250,7 +1538,7 @@
                                 </span>
                             </div>
                             <div class="text pl-3">
-                                <h2>2- Introduction to Data Science in Python</h2>
+                                <h2>Introduction to Data Science in Python</h2>
                                 <span class="position">University of Michigan</span>
                                 <br>
                                 <span><strong>Issued:</strong></span>
@@ -1268,7 +1556,7 @@
                                 </span>
                             </div>
                             <div class="text pl-3">
-                                <h2>1- Learn to Program: The Fundamentals</h2>
+                                <h2>Learn to Program: The Fundamentals</h2>
                                 <span class="position">University of Toronto</span>
                                 <br>
                                 <span><strong>Issued:</strong></span>
@@ -1279,12 +1567,16 @@
                                 </a>
                             </div>
                         </div>
+                        </div>
                         <div id="skills-section">
                             <div id="page-3" class="page three">
                                 <h2 class="heading">Skills</h2>
                                 <div style="font-size: 21px;">
                                     <li><span style="color: #56CE5E; font-weight: bold;">Data Science</span>: Experience in data analysis, data mining, modeling, and deploying data pipelines.</li>
                                     <li><span style="color: #56CE5E; font-weight: bold;">Machine Learning</span>: Developing predictive models and implementing machine learning algorithms.</li>
+                                    <li><span style="color: #56CE5E; font-weight: bold;">LLM Development & Collaboration</span>: Formulating complex questions (EDA, statistics, ML, logic), developing code solutions with LLMs, and collaborating to improve model performance through feedback and validation.</li>
+                                    <li><span style="color: #56CE5E; font-weight: bold;">AI / LLM Evaluation</span>: Evaluating LLM-generated code with rubrics, designing bug-planting scenarios in production codebases, and benchmarking debugging capabilities (e.g. SWE-Bench).</li>
+                                    <li><span style="color: #56CE5E; font-weight: bold;">Data Synthesis for AI</span>: Generating and curating large-scale datasets (e.g. 100k+ visualizations) to enhance LLM proficiency in data visualization and analysis.</li>
                                     <li><span style="color: #56CE5E; font-weight: bold;">Data Analysis</span>: Gathering, cleaning, and analyzing data to extract insights and support decision-making.</li>
                                     <li><span style="color: #56CE5E; font-weight: bold;">Python Programming</span>: Proficient in Python for data analysis, scripting, and automation tasks.</li>
                                     <li><span style="color: #56CE5E; font-weight: bold;">R Programming</span>: Good in R for data analysis, and ML modeling.</li>
@@ -1307,7 +1599,7 @@
             <div class="container-fluid px-md-5">
                 <div class="row justify-content-center py-5 mt-5">
                     <div class="col-md-12 heading-section text-center ftco-animate fadeInUp ftco-animated">
-                        <h2 class="mb-4">Professional Projects</h2>
+                        <h2 class="mb-4">Projects</h2>
                     </div>
                 </div>
                 <div class="row">
@@ -1534,11 +1826,9 @@
 
             <div class="row d-flex justify-content-center contact-info mb-5">
 
-                <a href="https://app.codesignal.com/profile/amir_saleem" target="_blank"></a>
                 <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-                    <a href="https://app.codesignal.com/profile/amir_saleem" target="_blank"></a>
                     <div class="align-self-stretch box text-center p-4 shadow">
-                        <a href="https://app.codesignal.com/profile/amir_saleem" target="_blank">
+                        <a href="https://app.codesignal.com/profile/amir_saleem" target="_blank" rel="noopener noreferrer" aria-label="Amir Saleem on CodeSignal">
                             <div class="icon d-flex align-items-center justify-content-center">
                                 <span class="flaticon-learning">
                                 <img src="index_files/codesignal-logo.png" width="80" height="80">
@@ -1546,13 +1836,10 @@
                             </div>
                         </a>
                         <div>
-                            <a href="https://app.codesignal.com/profile/amir_saleem" target="_blank">
+                            <a href="https://app.codesignal.com/profile/amir_saleem" target="_blank" rel="noopener noreferrer" aria-label="Open CodeSignal profile">
                                 <h3 class="mb-4"><br>CodeSignal</h3>
                             </a>
-                            <p>
-                                <a href="https://app.codesignal.com/profile/amir_saleem" target="_blank"></a>
-                                <a onclick="window.location.href='https://app.codesignal.com/profile/amir_saleem'"></a>
-                            </p>
+                            <p class="mb-0"><a href="https://app.codesignal.com/profile/amir_saleem" target="_blank" rel="noopener noreferrer" aria-label="View CodeSignal profile">View profile</a></p>
                         </div>
                     </div>
                 </div>
@@ -1563,10 +1850,10 @@
                 <div class="col-md-6 col-lg-3 d-flex ftco-animate">
                     <a href="https://leetcode.com/amirsaleem/" target="_blank"></a>
                     <div class="align-self-stretch box text-center p-4 shadow">
-                        <a href="https://leetcode.com/amirsaleem/" target="_blank">
+                        <a href="https://leetcode.com/amirsaleem/" target="_blank" rel="noopener noreferrer" aria-label="Amir Saleem on LeetCode">
                             <div class="icon d-flex align-items-center justify-content-center">
-                                <span class="flaticon-learning">
-                                <img src="index_files/leetcode-icon.png" width="80" height="80">
+                                <span class="flaticon-learning" aria-hidden="true">
+                                <img src="index_files/leetcode-icon.png" width="80" height="80" alt="">
                                 </span>
                             </div>
                         </a>
@@ -1587,10 +1874,10 @@
                 <div class="col-md-6 col-lg-3 d-flex ftco-animate">
                     <a href="https://www.codewars.com/users/Amir.Saleem" target="_blank"></a>
                     <div class="align-self-stretch box text-center p-4 shadow">
-                        <a href="https://www.codewars.com/users/Amir.Saleem" target="_blank">
+                        <a href="https://www.codewars.com/users/Amir.Saleem" target="_blank" rel="noopener noreferrer" aria-label="Amir Saleem on Codewars">
                             <div class="icon d-flex align-items-center justify-content-center">
-                                <span class="flaticon-learning">
-                                <img src="index_files/codewar-icon.png" width="80" height="80">
+                                <span class="flaticon-learning" aria-hidden="true">
+                                <img src="index_files/codewar-icon.png" width="80" height="80" alt="">
                                 </span>
                             </div>
                         </a>
@@ -1610,10 +1897,10 @@
                 <div class="col-md-6 col-lg-3 d-flex ftco-animate">
                     <a href="https://www.hackerrank.com/amirsaleem1990?hr_r=1" target="_blank"></a>
                     <div class="align-self-stretch box text-center p-4 shadow">
-                        <a href="https://www.hackerrank.com/amirsaleem1990?hr_r=1" target="_blank">
+                        <a href="https://www.hackerrank.com/amirsaleem1990?hr_r=1" target="_blank" rel="noopener noreferrer" aria-label="Amir Saleem on HackerRank">
                             <div class="icon d-flex align-items-center justify-content-center">
-                                <span class="flaticon-learning">
-                                <img src="index_files/hackerrank-icon.png" width="80" height="80">
+                                <span class="flaticon-learning" aria-hidden="true">
+                                <img src="index_files/hackerrank-icon.png" width="80" height="80" alt="">
                                 </span>
                             </div>
                         </a>
@@ -1633,10 +1920,10 @@
                 <div class="col-md-6 col-lg-3 d-flex ftco-animate">
                     <a href="https://stackoverflow.com/users/8875846/amir-saleem" target="_blank"></a>
                     <div class="align-self-stretch box text-center p-4 shadow">
-                        <a href="https://stackoverflow.com/users/8875846/amir-saleem" target="_blank">
+                        <a href="https://stackoverflow.com/users/8875846/amir-saleem" target="_blank" rel="noopener noreferrer" aria-label="Amir Saleem on Stack Overflow">
                             <div class="icon d-flex align-items-center justify-content-center">
-                                <span class="flaticon-learning">
-                                <img src="https://cdn.sstatic.net/Sites/stackoverflow/Img/apple-touch-icon@2.png" width="80" height="80" alt="Stack Overflow">
+                                <span class="flaticon-learning" aria-hidden="true">
+                                <img src="https://cdn.sstatic.net/Sites/stackoverflow/Img/apple-touch-icon@2.png" width="80" height="80" alt="">
                                 </span>
                             </div>
                         </a>
@@ -1661,90 +1948,99 @@
                 </div>
             </div>
             <div class="row d-flex justify-content-center contact-info mb-5">
-                <a href="https://www.linkedin.com/in/amirsaleem1990/" target="_blank"></a>
                 <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-                    <a href="https://www.linkedin.com/in/amirsaleem1990/" target="_blank"></a>
                     <div class="align-self-stretch box text-center p-4 shadow">
-                        <a href="https://www.linkedin.com/in/amirsaleem1990/" target="_blank">
+                        <a href="https://www.linkedin.com/in/amirsaleem1990/" target="_blank" rel="noopener noreferrer" aria-label="Amir Saleem on LinkedIn">
                             <div class="icon d-flex align-items-center justify-content-center">
-                                <!--             <span class="flaticon-learning">
-                                    <img src="index_files/codewar-icon.png" width="42" height="45;">
-                                    </span> -->
-                                <span class="icon"><i class="fab fa-linkedin"></i></span>
+                                <span class="icon" aria-hidden="true"><i class="fab fa-linkedin"></i></span>
                             </div>
                         </a>
                         <div>
-                            <a href="https://www.linkedin.com/in/amirsaleem1990/" target="_blank">
+                            <a href="https://www.linkedin.com/in/amirsaleem1990/" target="_blank" rel="noopener noreferrer" aria-label="Amir Saleem on LinkedIn">
                                 <h3 class="mb-4">LinkedIn</h3>
                             </a>
-                            <p>
-                                <a href="https://www.linkedin.com/in/amirsaleem1990/" target="_blank"></a>
-                                <a onclick="window.location.href='https://www.linkedin.com/in/amirsaleem1990/'"></a>
+                            <p class="mb-0">
+                                <a href="https://www.linkedin.com/in/amirsaleem1990/" target="_blank" rel="noopener noreferrer" aria-label="Open LinkedIn profile">View profile</a>
                             </p>
                         </div>
                     </div>
                 </div>
-                <a href="https://public.tableau.com/app/profile/amir.saleem" target="_blank"></a>
                 <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-                    <a href="https://public.tableau.com/app/profile/amir.saleem" target="_blank"></a>
                     <div class="align-self-stretch box text-center p-4 shadow">
-                        <a href="https://public.tableau.com/app/profile/amir.saleem" target="_blank">
+                        <a href="https://wa.me/923323388625" target="_blank" rel="noopener noreferrer" aria-label="Chat with Amir Saleem on WhatsApp">
                             <div class="icon d-flex align-items-center justify-content-center">
-                                <!-- <span class="icon-bar-chart"></span> -->
-                                <!-- <span class="icon"><i class="fab fa-tableau"></i></span> -->
-                                <span class="icon"><i class="fas fa-chart-bar"></i></span>
+                                <span class="icon" aria-hidden="true"><i class="fab fa-whatsapp"></i></span>
                             </div>
                         </a>
                         <div>
-                            <a href="https://public.tableau.com/app/profile/amir.saleem" target="_blank">
+                            <a href="https://wa.me/923323388625" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+                                <h3 class="mb-4">WhatsApp</h3>
+                            </a>
+                            <p class="mb-0">
+                                <a href="https://wa.me/923323388625" target="_blank" rel="noopener noreferrer" aria-label="Open WhatsApp chat">Chat with me</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+                    <div class="align-self-stretch box text-center p-4 shadow">
+                        <a href="https://public.tableau.com/app/profile/amir.saleem" target="_blank" rel="noopener noreferrer" aria-label="Amir Saleem Tableau Viz Gallery">
+                            <div class="icon d-flex align-items-center justify-content-center">
+                                <span class="icon" aria-hidden="true"><i class="fas fa-chart-bar"></i></span>
+                            </div>
+                        </a>
+                        <div>
+                            <a href="https://public.tableau.com/app/profile/amir.saleem" target="_blank" rel="noopener noreferrer" aria-label="Amir Saleem Tableau Viz Gallery">
                                 <h3 class="mb-4">Viz Gallery</h3>
                             </a>
-                            <p>
-                                <a href="https://public.tableau.com/app/profile/amir.saleem" target="_blank"></a>
-                                <a onclick="window.location.href='https://public.tableau.com/app/profile/amir.saleem'"></a>
+                            <p class="mb-0">
+                                <a href="https://public.tableau.com/app/profile/amir.saleem" target="_blank" rel="noopener noreferrer" aria-label="Open Tableau Viz Gallery">View gallery</a>
                             </p>
                         </div>
                     </div>
                 </div>
-                <a href="https://github.com/amirsaleem1990" target="_blank"></a>
                 <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-                    <a href="https://github.com/amirsaleem1990" target="_blank"></a>
                     <div class="align-self-stretch box text-center p-4 shadow">
-                        <a href="https://github.com/amirsaleem1990" target="_blank">
+                        <a href="https://github.com/amirsaleem1990" target="_blank" rel="noopener noreferrer" aria-label="Amir Saleem on GitHub">
                             <div class="icon d-flex align-items-center justify-content-center">
-                                <!-- <span class="icon-github"></span> -->
-                                <span class="icon"><i class="fab fa-github"></i></span>
+                                <span class="icon" aria-hidden="true"><i class="fab fa-github"></i></span>
                             </div>
                         </a>
                         <div>
-                            <a href="https://github.com/amirsaleem1990" target="_blank">
+                            <a href="https://github.com/amirsaleem1990" target="_blank" rel="noopener noreferrer" aria-label="Amir Saleem on GitHub">
                                 <h3 class="mb-4">Github</h3>
                             </a>
-                            <p>
-                                <a href="https://github.com/amirsaleem1990" target="_blank"></a>
-                                <a onclick="window.location.href='https://github.com/amirsaleem1990'"></a>
+                            <p class="mb-0">
+                                <a href="https://github.com/amirsaleem1990" target="_blank" rel="noopener noreferrer" aria-label="Open GitHub profile">View profile</a>
                             </p>
                         </div>
                     </div>
                 </div>
                 <a href="mailto:amirsaleem1990@hotmail.com" target="_blank"></a>
                 <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-                    <a href="mailto:amirsaleem1990@hotmail.com" target="_blank"></a>
-                    <div class="align-self-stretch box text-center p-4 shadow">
-                        <a href="mailto:amirsaleem1990@hotmail.com" target="_blank">
+                    <div class="align-self-stretch box text-center p-4 shadow email-contact-box">
+                        <a href="mailto:amirsaleem1990@hotmail.com" class="email-contact-link" aria-label="Email Amir Saleem at amirsaleem1990@hotmail.com">
                             <div class="icon d-flex align-items-center justify-content-center">
-                                <!-- <span class="icon-paper-plane"></span> -->
-                                <span class="icon"><i class="fas fa-envelope"></i></span>
+                                <span class="icon" aria-hidden="true"><i class="fas fa-envelope"></i></span>
                             </div>
                         </a>
                         <div>
-                            <a href="mailto:amirsaleem1990@hotmail.com" target="_blank">
-                                <h3 class="mb-4">Email Address</h3>
-                            </a>
-                            <p>
-                                <a href="mailto:amirsaleem1990@hotmail.com" target="_blank"></a>
-                                <a href="mailto:amirsaleem1990@hotmail.com"></a>
+                            <h3 class="mb-4">Email</h3>
+                            <p class="email-contact-hover-wrap">
+                                <span class="email-contact-address" title="Click to copy" role="button" tabindex="0" aria-label="Copy email address amirsaleem1990@hotmail.com">amirsaleem1990@hotmail.com</span>
+                                <span class="email-copied-msg" aria-hidden="true">Copied!</span>
                             </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+                    <div class="align-self-stretch box text-center p-4 shadow" aria-label="Location: Islamabad, Pakistan">
+                        <div class="icon d-flex align-items-center justify-content-center" aria-hidden="true">
+                            <span class="icon"><i class="fas fa-map-marker-alt"></i></span>
+                        </div>
+                        <div>
+                            <h3 class="mb-4">Location</h3>
+                            <p class="mb-0">Islamabad, Pakistan</p>
                         </div>
                     </div>
                 </div>
@@ -1776,6 +2072,7 @@
                     </div> -->
             </div>
         </section>
+        </main>
         <footer class="ftco-footer ftco-section">
             <div class="container">
                 <div class="row mb-5">
@@ -1824,6 +2121,7 @@
                     <div class="col-md-12 text-center">
                         <i class="icon-heart color-danger" aria-hidden="true"></i>
                         <i class="icon-heart color-danger" aria-hidden="true"></i>
+                        <p class="mt-2 mb-0 small" style="color: rgba(255,255,255,0.5);">© 2025 Amir Saleem · Data Scientist · Islamabad, Pakistan</p>
                     </div>
                 </div>
             </div>
@@ -1861,6 +2159,34 @@
                .end()
                .appendTo('#slideshow');
             }, 5000);
+
+            document.addEventListener('DOMContentLoaded', function() {
+                var el = document.querySelector('.email-contact-address');
+                var box = document.querySelector('.email-contact-box');
+                if (el && box) {
+                    function copyEmail() {
+                        var email = el.textContent;
+                        if (navigator.clipboard && navigator.clipboard.writeText) {
+                            navigator.clipboard.writeText(email).then(function() {
+                                box.classList.add('email-copied');
+                                setTimeout(function() { box.classList.remove('email-copied'); }, 2000);
+                            });
+                        } else {
+                            var ta = document.createElement('textarea');
+                            ta.value = email;
+                            ta.setAttribute('readonly', '');
+                            ta.style.position = 'absolute';
+                            ta.style.left = '-9999px';
+                            document.body.appendChild(ta);
+                            ta.select();
+                            try { document.execCommand('copy'); box.classList.add('email-copied'); setTimeout(function() { box.classList.remove('email-copied'); }, 2000); } catch (err) {}
+                            document.body.removeChild(ta);
+                        }
+                    }
+                    el.addEventListener('click', function(e) { e.preventDefault(); copyEmail(); });
+                    el.addEventListener('keydown', function(e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); copyEmail(); } });
+                }
+            });
         </script>
         <style type="text/css">.txt-rotate > .wrap { border-right: 0.08em solid #666 }</style>
     </body>
