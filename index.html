@@ -73,14 +73,14 @@
             .hero-section .intro-box .subheading {
                 display: block;
                 text-transform: uppercase;
-                font-size: 0.95rem;
+                font-size: calc(0.95rem + 2px);
                 font-weight: 600;
                 letter-spacing: 3px;
                 color: rgba(255, 255, 255, 0.9);
                 margin-bottom: 0.5rem;
             }
             .hero-section .intro-box h1 {
-                font-size: 4rem;
+                font-size: calc(4rem + 2px);
                 font-weight: 800;
                 letter-spacing: -2px;
                 line-height: 1.1;
@@ -88,7 +88,7 @@
                 margin-bottom: 0.5rem;
             }
             .hero-section .intro-box h2 {
-                font-size: 1.5rem;
+                font-size: calc(1.5rem + 2px);
                 font-weight: 600;
                 color: rgba(255, 255, 255, 0.95);
                 margin-bottom: 0;
@@ -99,13 +99,13 @@
                 font-weight: 600;
             }
             .hero-section .hero-tagline {
-                font-size: 1.05rem;
+                font-size: calc(1.05rem + 2px);
                 color: rgba(255, 255, 255, 0.85);
                 font-weight: 400;
                 margin-top: 1rem;
             }
             .hero-section .hero-location {
-                font-size: 0.95rem;
+                font-size: calc(0.95rem + 2px);
                 color: rgba(255, 255, 255, 0.75);
                 margin-top: 0.25rem;
             }
@@ -149,7 +149,7 @@
                 color: #fff !important;
             }
             @media (max-width: 767.98px) {
-                .hero-section .intro-box h1 { font-size: 2.5rem; }
+                .hero-section .intro-box h1 { font-size: calc(2.5rem + 2px); }
                 .hero-section .intro-box { padding: 1.75rem 1.25rem; }
             }
         </style>
@@ -198,7 +198,7 @@
                 padding: 0 1rem;
             }
             .site-header .header-brand {
-                font-size: 1.25rem;
+                font-size: calc(1.25rem + 2px);
                 font-weight: 700;
                 letter-spacing: -0.02em;
                 color: #fff !important;
@@ -210,7 +210,7 @@
             }
             .site-header .header-resume-btn {
                 display: inline-block;
-                font-size: 0.875rem;
+                font-size: calc(0.875rem + 2px);
                 font-weight: 600;
                 padding: 0.5rem 1rem;
                 margin-left: 1rem;
@@ -226,7 +226,7 @@
                 color: #fff !important;
             }
             .site-header .header-nav .nav-item .nav-link {
-                font-size: 0.9rem;
+                font-size: calc(0.9rem + 2px);
                 font-weight: 500;
                 padding: 0.85rem 0.75rem !important;
                 color: rgba(255, 255, 255, 0.85) !important;
@@ -244,10 +244,10 @@
                 padding: 0.4rem 0.6rem;
             }
             .site-header .navbar-toggler .oi-menu {
-                font-size: 1.25rem;
+                font-size: calc(1.25rem + 2px);
             }
             .site-header .header-menu-text {
-                font-size: 0.9rem;
+                font-size: calc(0.9rem + 2px);
                 margin-left: 0.35rem;
             }
             @media (min-width: 992px) {
@@ -270,7 +270,7 @@
             /* Email contact: show copyable email on hover */
             .email-contact-box .email-contact-address {
                 display: none;
-                font-size: 0.95rem;
+                font-size: calc(0.95rem + 2px);
                 word-break: break-all;
                 cursor: pointer;
                 user-select: all;
@@ -282,7 +282,7 @@
             }
             .email-contact-box .email-copied-msg {
                 display: none;
-                font-size: 0.85rem;
+                font-size: calc(0.85rem + 2px);
                 color: #56CE5E;
             }
             .email-contact-box.email-copied .email-contact-address { display: none; }
@@ -387,7 +387,7 @@
                      <p>I like working with new Tools and Technologies.</p>
                      <ul class="about-info mt-4 px-md-0 px-2">
                      	<li class="d-flex"><span>Name:</span> <span>Afnan Amin Ali</span></li>
-                     	<li class="d-flex"><span>Email:</span> <span style="font-size: 14px">ali3900089@cloud.neduet.edu.pk</span></li>
+                     	<li class="d-flex"><span>Email:</span> <span style="font-size: 16px">ali3900089@cloud.neduet.edu.pk</span></li>
                      	<li class="d-flex"><span>Phone: </span> <span>+92-3423428364</span></li>
                      	<li class="d-flex"><span>Country: </span> <span>Pakistan</span></li>
                      	<li class="d-flex"><span>City: </span> <span>Karachi</span></li>
@@ -1576,7 +1576,7 @@
                         <div id="skills-section">
                             <div id="page-3" class="page three">
                                 <h2 class="heading">Skills</h2>
-                                <div style="font-size: 21px;">
+                                <div style="font-size: 23px;">
                                     <li><span style="color: #56CE5E; font-weight: bold;">Data Science</span>: Experience in data analysis, data mining, modeling, and deploying data pipelines.</li>
                                     <li><span style="color: #56CE5E; font-weight: bold;">Machine Learning</span>: Developing predictive models and implementing machine learning algorithms.</li>
                                     <li><span style="color: #56CE5E; font-weight: bold;">LLM Development & Collaboration</span>: Formulating complex questions (EDA, statistics, ML, logic), developing code solutions with LLMs, and collaborating to improve model performance through feedback and validation.</li>
@@ -1608,212 +1608,213 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-3 text-center d-flex ftco-animate fadeInUp ftco-animated">
-                        <a class="services-1 shadow" href="https://github.com/amirsaleem1990/Egypt-Pakistan-Phone-Data" target="_blank">
+                    <div class="col-md-12 text-left d-flex ftco-animate fadeInUp ftco-animated">
+                        <a class="services-1 shadow w-100">
                             <div class="desc">
-                                <h3 class="mc-4">Egypt-Pakistan-Phone-Data</h3>
-                                <p><strong>BeautifulSoup</strong></p>
+                                <h3 class="mc-4">End-to-End MLOps Pipeline for Credit Default Prediction</h3>
+                                <p><strong>PYTHON • PANDAS • SCIKIT-LEARN • DECISION TREES • GITHUB ACTIONS • SQL</strong></p>
                                 <p>
-                                    Scraped used and new mobile's data from 10 different websites for Egypt and Pakistan, using BeautifulSoup.
+                                    Built an end-to-end MLOps pipeline to predict customer credit defaults using a Decision Tree model, with a strong focus on automation, monitoring, and production reliability.
+                                    <br><br>
+                                    The system ingests data directly from a database, performs data cleaning and feature engineering, and trains a machine learning model evaluated using F1-score to balance precision and recall.
+                                </p>
+                                <p>
+                                    <strong>Automated retraining:</strong>
                                     <br>
-                                    Demonstrated the ability to fetch data using BeautifulSoup.
-                                </p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-3 text-center d-flex ftco-animate fadeInUp ftco-animated">
-                        <a class="services-1 shadow" href="https://www.github.com/amirsaleem1990/GitHub-Million-Repo-Analysis" target="_blank">
-                            <div class="desc">
-                                <h3 class="mc-4">Analysis of 1 million repos metadata</h3>
-                                <p><strong> GITHUB SEARCH API • PANDAS • SEABORN • MATPLOTLIB </strong></p>
-                                <p>
-                                    Fetched data for the last one million Github repositories created, using Github Search API, then analyzed the data using Pandas, Matplotlib, and Seaborn. Created multiple charts and summaries.
+                                    • Periodic retraining (weekly)
                                     <br>
-                                    Demonstrated the ability to fetch data using an API and perform data analysis using Python.
+                                    • Drift-triggered retraining using Population Stability Index (PSI)
+                                </p>
+                                <p>
+                                    Integrated CI/CD using GitHub Actions to automate model retraining, evaluation against the production model, versioned model storage (.pkl), and deployment to the API server.
+                                </p>
+                                <p>
+                                    <strong>Safe deployment:</strong> model versioning and rollback; blue-green deployment strategy. Monitored production performance by tracking input data, predictions, and anomalies—identifying and resolving issues such as reduced data ingestion from UI changes and performance degradation from data drift.
+                                </p>
+                                <p>
+                                    The system is designed for scalability, reliability, and continuous model improvement with minimal manual intervention.
                                 </p>
                             </div>
                         </a>
                     </div>
-                    <div class="col-md-3 text-center d-flex ftco-animate fadeInUp ftco-animated">
+                    <div class="col-md-3 text-left d-flex ftco-animate fadeInUp ftco-animated">
+                        <a class="services-1 shadow" href="https://github.com/amirsaleem1990/web-scraping-property-data" target="_blank" rel="noopener noreferrer">
+                            <div class="desc">
+                                <h3 class="mc-4">Production Web Scraping at Scale</h3>
+                                <p><strong>PYTHON • BEAUTIFULSOUP • WEB SCRAPING • SQLITE • CSV • PICKLE</strong></p>
+                                <p>
+                                    Contributed to a <strong>200+ scraper</strong> program covering many domains and layouts, and shipped focused extractors—for example <strong>multi-region smartphone listings</strong> from <strong>10+ retail and classified sites</strong>, and <strong>property</strong> buy/rent feeds with wildly different markup.
+                                    <br><br>
+                                    Used a <strong>class-based</strong> design (<strong>scraper_class</strong>-style) to separate site-specific HTML from shared orchestration, retries, and outputs (<strong>CSV</strong>, <strong>pickle</strong>, <strong>SQLite</strong>) so analysts and pipelines could treat fresh data as infrastructure, not one-off scripts.
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3 text-left d-flex ftco-animate fadeInUp ftco-animated">
+                        <a class="services-1 shadow" href="https://github.com/amirsaleem1990/GitHub-Million-Repo-Analysis" target="_blank">
+                            <div class="desc">
+                                <h3 class="mc-4">One Million GitHub Repos — Metadata Study</h3>
+                                <p><strong>PYTHON • GITHUB SEARCH API • PANDAS • MATPLOTLIB • SEABORN</strong></p>
+                                <p>
+                                    Pulled metadata for roughly <strong>one million recently created repositories</strong> via the <strong>GitHub Search API</strong>, working within pagination and rate limits to assemble a clean dataset for exploration.
+                                    <br><br>
+                                    Performed EDA in <strong>Pandas</strong> and built <strong>Matplotlib</strong> and <strong>Seaborn</strong> visuals to summarize languages, activity patterns, and other attributes—turning raw API responses into charts and takeaways suitable for reporting or further modeling.
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3 text-left d-flex ftco-animate fadeInUp ftco-animated">
                         <a class="services-1 shadow">
                             <div class="desc">
-                                <h3 class="mc-4">ETL Pipeline</h3>
-                                <p><strong> ETL • PYTHON • SQL • MySQL • LINUX </strong></p>
+                                <h3 class="mc-4">Device Telemetry ETL at Scale</h3>
+                                <p><strong>PYTHON • ETL • MYSQL • LINUX • AUTOMATION</strong></p>
                                 <p>
-                                    Worked on a Data Engineering project for a client with a mobile application used by thousands of users. The app was collecting daily data from devices in .txt format, ziping the files, and sent them to a server. I was given access to these files and developed an ETL process to handle them at scale. For each zip file, I extracted information from messy .txt files, fetched user data from relevant tables, and updated or created new rows based on multiple conditions. This process was executed daily for thousands of .zip files. I successfully built and deployed the solution on a Linux server, ensuring efficient data processing, accuracy, and seamless integration with existing systems.
+                                    Built a <strong>daily ETL pipeline</strong> for a client mobile product with a large active user base: ingest device-generated <strong>.txt</strong> payloads packaged in <strong>.zip</strong> archives, parse noisy files, join to <strong>MySQL</strong> user dimensions, and <strong>upsert</strong> facts using conditional business rules.
+                                    <br><br>
+                                    Processed <strong>thousands of archives per run</strong> on <strong>Linux</strong> with repeatable jobs and clear failure behavior—balancing throughput, accuracy, and fit with downstream analytics and reporting.
                                 </p>
                             </div>
                         </a>
                     </div>
-                    <div class="col-md-3 text-center d-flex ftco-animate fadeInUp ftco-animated">
+                    <div class="col-md-3 text-left d-flex ftco-animate fadeInUp ftco-animated">
                         <a class="services-1 shadow">
                             <div class="desc">
-                                <h3 class="mc-4">Reverse ETL Pipeline</h3>
-                                <p><strong> REVERSE ETL • GraphQL • API • LINUX • PYTHON </strong></p>
+                                <h3 class="mc-4">Monday.com to MySQL Reverse ETL</h3>
+                                <p><strong>PYTHON • GRAPHQL • API • MYSQL • LINUX</strong></p>
                                 <p>
-                                    Implemented Data Engineering processes, specifically reverse ETL, for Monday.com utilizing GraphQL with their API. The script was to fetch data for the last 24 hours from Monday.com and load it into MySQL tables. Deployed the script on a Linux server using a cron job, ensuring automated, reliable, and efficient data synchronization.
+                                    Implemented <strong>reverse ETL</strong> from <strong>Monday.com</strong> into <strong>MySQL</strong> using their <strong>GraphQL</strong> API: incremental loads for a rolling <strong>24-hour</strong> window of board and item activity, normalized for BI and ad hoc SQL.
+                                    <br><br>
+                                    Scheduled on <strong>Linux</strong> with <strong>cron</strong> for hands-off sync—reducing copy-paste exports and keeping warehouse-style tables aligned with the live workspace.
                                 </p>
                             </div>
                         </a>
                     </div>
-                    <div class="col-md-3 text-center d-flex ftco-animate fadeInUp ftco-animated">
+                    <div class="col-md-3 text-left d-flex ftco-animate fadeInUp ftco-animated">
                         <a class="services-1 shadow">
                             <div class="desc">
-                                <h3 class="mc-4">ETL Pipeline</h3>
-                                <p><strong> ETL, Redshift • Athena • MySQL • Slack • Bitbucket • Docker • AWS • CloudWatch </strong></p>
+                                <h3 class="mc-4">Multi-Source ETL &amp; Data Quality Alerts</h3>
+                                <p><strong>PYTHON • AWS REDSHIFT • ATHENA • MYSQL • DOCKER • SLACK • BITBUCKET • CLOUDWATCH</strong></p>
                                 <p>
-                                    Implemented Data Engineering processes by writing multiple ETL scripts to fetch data from Redshift, Athena, and MySQL, run checks, and send messages to a Slack bot if any check fails. Incorporated existing CI/CD pipelines via Bitbucket for smooth deployments. Executed code pushes to trigger Bitbucket pipelines for automated builds. Managed Docker image deployments to AWS and monitored performance via CloudWatch, ensuring reliability, scalability, and efficient system monitoring.
+                                    Owned ETL and <strong>data-quality checks</strong> across <strong>Redshift</strong>, <strong>Athena</strong>, and <strong>MySQL</strong>, with failures pushed to a <strong>Slack</strong> bot for rapid triage.
+                                    <br><br>
+                                    Wired jobs into <strong>Bitbucket</strong> CI/CD and <strong>Docker</strong> deploys on <strong>AWS</strong>, using <strong>CloudWatch</strong> for runtime visibility—so data pipelines stayed observable, repeatable, and safe to change.
                                 </p>
                             </div>
                         </a>
                     </div>
-                    <div class="col-md-3 text-center d-flex ftco-animate fadeInUp ftco-animated">
-                        <a class="services-1 shadow" href="https://github.com/amirsaleem1990/web-scraping-property-data" target="_blank">
-                            <div class="desc">
-                                <h3 class="mc-4">"Multi-Source Property Data Scraper"</h3>
-                                <p><strong> WEB-SCRAPING • BeautifulSoup</strong></p>
-                                <p>
-                                    Developed a web scraping script to collect data from diverse online sources. The code structure, organized into the 'scraper_class,' featured nested classes and methods for efficient data extraction. 
-                                    <br>
-                                    Using Python librariey BeautifulSoup, I retrieved property listing data, both for buying and renting, storing it in formats such as pickle files and CSV. 
-                                    <br>
-                                    This project highlights my web scraping skills and proficiency in data extraction and manipulation for various online platforms.
-                                </p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-3 text-center d-flex ftco-animate fadeInUp ftco-animated">
+                    <div class="col-md-3 text-left d-flex ftco-animate fadeInUp ftco-animated">
                         <a class="services-1 shadow">
                             <div class="desc">
-                                <h3 class="mc-4">EDA and Machine Learning Application</h3>
-                                <p><strong> DJANGO • REST API • PANDAS • SEABORN </strong></p>
+                                <h3 class="mc-4">Django Analytics &amp; ML Platform</h3>
+                                <p><strong>PYTHON • DJANGO • REST API • PANDAS • SEABORN</strong></p>
                                 <p>
-                                    Developed a comprehensive Django application encompassing extensive Exploratory Data Analysis (EDA), advanced 
-                                    Machine Learning (ML) models creation, and insightful market basket analysis. Leveraged strong 
-                                    programming skills and data science expertise to build a robust and interactive platform, enabling in-depth data 
-                                    exploration, accurate predictive modeling, and valuable market insights. 
-                                    <br>
-                                    Demonstrated ability to integrate multiple analytical techniques into a unified application, enhancing data-driven 
-                                    decision-making capabilities. 
+                                    Delivered a <strong>Django</strong> application that combines <strong>EDA</strong>, trained <strong>ML</strong> models, and <strong>market basket</strong>-style analysis behind one cohesive experience and <strong>REST</strong> endpoints.
+                                    <br><br>
+                                    Focused on a practical split between interactive exploration, reproducible modeling workflows, and outputs stakeholders could trust—without juggling separate notebooks and ad hoc scripts.
                                 </p>
                             </div>
                         </a>
                     </div>
-                    <div class="col-md-3 text-center d-flex ftco-animate fadeInUp ftco-animated">
+                    <div class="col-md-3 text-left d-flex ftco-animate fadeInUp ftco-animated">
                         <a class="services-1 shadow">
                             <div class="desc">
-                                <h3 class="mc-4">ETL</h3>
-                                <p><strong> ETL • MYSQL • PYTHON </strong></p>
+                                <h3 class="mc-4">High-Volume MySQL ETL</h3>
+                                <p><strong>PYTHON • ETL • MYSQL</strong></p>
                                 <p>
-                                    Designed and implemented a robust Extract, Transform, Load (ETL) script to efficiently process and integrate large volumes 
-                                    of data into a MySQL database. Employed manual parsing techniques and applied sophisticated logic to extract relevant information, 
-                                    ensuring data accuracy and consistency. Developed intricate data transformation rules and efficiently loaded the processed data into 
-                                    multiple tables, enabling seamless data retrieval and analysis. Demonstrated strong problem-solving skills and attention to detail in 
-                                    handling complex data structures and delivering a streamlined ETL workflow. 
+                                    Engineered a Python <strong>ETL</strong> pipeline to land large, semi-structured feeds into <strong>MySQL</strong>: bespoke parsers, validation, and multi-table loads with consistent keys and transforms.
+                                    <br><br>
+                                    Emphasized repeatable rules, edge-case handling, and schemas that stayed query-friendly for analysts—cutting manual cleanup before reporting.
                                 </p>
                             </div>
                         </a>
                     </div>
-                    <div class="col-md-3 text-center d-flex ftco-animate fadeInUp ftco-animated">
+                    <div class="col-md-3 text-left d-flex ftco-animate fadeInUp ftco-animated">
                         <a class="services-1 shadow">
                             <div class="desc">
-                                <h3 class="mc-4">Car Price Estimation</h3>
-                                <p><strong>Machine Learning • REGRESSION</strong></p>
+                                <h3 class="mc-4">Used-Car Price Regression</h3>
+                                <p><strong>PYTHON • MACHINE LEARNING • REGRESSION • FEATURE ENGINEERING</strong></p>
                                 <p>
-                                    Developed a machine learning model to accurately predict car prices based on various factors such as brand, model, year of 
-                                    manufacture, mileage, and other relevant features. Gathered and preprocessed a large dataset of car listings, performed feature 
-                                    engineering, and applied advanced regression techniques to build a robust pricing model. Achieved high accuracy in predicting 
-                                    car prices, enabling informed decision-making for buyers and sellers in the automotive market. This project showcased expertise in data 
-                                    analysis, feature engineering, and regression modeling, highlighting the ability to deliver valuable insights and drive business outcomes 
-                                    in the automotive industry. 
+                                    Built regression models to estimate vehicle prices from <strong>brand</strong>, <strong>model</strong>, <strong>year</strong>, <strong>mileage</strong>, and related listing attributes—end to end from prep through evaluation.
+                                    <br><br>
+                                    Stress-tested <strong>feature engineering</strong> and model choices for stable, interpretable signals rather than brittle leaderboard fits—oriented toward buyer/seller-facing price guidance.
                                 </p>
                             </div>
                         </a>
                     </div>
-                    <div class="col-md-3 text-center d-flex ftco-animate fadeInUp ftco-animated">
+                    <div class="col-md-3 text-left d-flex ftco-animate fadeInUp ftco-animated">
                         <a class="services-1 shadow">
                             <div class="desc">
-                                <h3 class="mc-4">Dynamic Hiring Portal for Streamlined Assessments</h3>
-                                <p><strong>DJANGO • REST API • PYTHON • MYSQL</strong></p>
+                                <h3 class="mc-4">Django Hiring &amp; Assessment Portal</h3>
+                                <p><strong>PYTHON • DJANGO • REST API • MYSQL • EMAIL AUTOMATION</strong></p>
                                 <p>
-                                    Developed a dynamic Django application for candidate hiring, streamlining the assessment process and enhancing the candidate experience. Implemented a secure user registration system, where candidates receive personalized login credentials via email to access the portal. Leveraged Django's flexible architecture to create a question bank with randomized selection based on the candidate's department, ensuring a tailored assessment experience. Incorporated multiple difficulty levels to accurately evaluate candidate skills and knowledge. Implemented automatic time tracking and submission features, providing a seamless assessment experience for candidates. Developed email notification functionality to inform both candidates and HR personnel of assessment completion or time expiration, facilitating efficient communication throughout the hiring process. Demonstrated strong problem-solving abilities and attention to detail in delivering a user-friendly and efficient hiring portal. 
+                                    Full <strong>Django</strong> workflow for technical hiring: secure signup, emailed credentials, and timed assessments with <strong>auto-submit</strong> when the clock runs out.
+                                    <br><br>
+                                    Department-aware <strong>randomized</strong> question banks, multiple difficulty tiers, and <strong>email</strong> updates to both candidates and HR on completion or expiry—cutting manual coordination while keeping attempts fair and auditable.
                                 </p>
                             </div>
                         </a>
                     </div>
-                    <div class="col-md-3 text-center d-flex ftco-animate">
+                    <div class="col-md-3 text-left d-flex ftco-animate">
                         <a class="services-1 shadow">
                             <div class="desc">
-                                <h3 class="mc-4">Loan Default Pprediction</h3>
-                                <p><strong>MACHINE LEARNING • PYTHON </strong></p>
+                                <h3 class="mc-4">Data Quality Audit &amp; Remediation</h3>
+                                <p><strong>PYTHON • MYSQL • DATA QUALITY</strong></p>
                                 <p>
-                                    Built a highly accurate loan default prediction model, achieving an exceptional AUC score of 0.88. Demonstrated expertise in data analysis and predictive modeling, enabling proactive customer retention strategies. Highlighted strong analytical skills and data-driven decision-making. 
+                                    Ran a structured audit across production <strong>MySQL</strong> datasets: duplicates, referential gaps, impossible or stale values, and silent drift that skewed dashboards.
+                                    <br><br>
+                                    Produced prioritized findings, partnered on fixes, and implemented corrections in code—raising trust in reporting and anything downstream (automation, ML, finance).
                                 </p>
                             </div>
                         </a>
                     </div>
-                    <div class="col-md-3 text-center d-flex ftco-animate">
+                    <div class="col-md-3 text-left d-flex ftco-animate">
                         <a class="services-1 shadow">
                             <div class="desc">
-                                <h3 class="mc-4">Data Audit</h3>
-                                <p><strong>MYSQL • PYTHON </strong></p>
+                                <h3 class="mc-4">Telecom Customer Lifetime Value</h3>
+                                <p><strong>R • MACHINE LEARNING • PREDICTIVE MODELING</strong></p>
                                 <p>
-                                    Conducted a comprehensive data audit, identifying and addressing multiple data inconsistencies, and errors, resulting in improved data quality, streamlined processes, and enhanced decision-making capabilities. 
+                                    Modeled <strong>CLV</strong> for telecom subscribers from tenure, usage, and revenue history—supporting <strong>segmentation</strong>, campaign targeting, and retention planning.
+                                    <br><br>
+                                    Balanced statistical rigor with narratives marketing and finance could operationalize, not only model metrics on a slide.
                                 </p>
                             </div>
                         </a>
                     </div>
-                    <div class="col-md-3 text-center d-flex ftco-animate">
+                    <div class="col-md-3 text-left d-flex ftco-animate">
                         <a class="services-1 shadow">
                             <div class="desc">
-                                <h3 class="mc-4">Web Scraping</h3>
-                                <p><strong>WEB SCRAPING • PYTHON • SQLITE</strong></p>
+                                <h3 class="mc-4">Land Valuation ML Model</h3>
+                                <p><strong>PYTHON • MACHINE LEARNING • ORACLE SQL</strong></p>
                                 <p>
-                                    Coordinated with a highly skilled team to develop, and deploy a comprehensive suite of 200+ Python web scraping scripts. These scripts demonstrated exceptional versatility and adaptability, enabling the extraction of critical data from a wide range of websites and contributing to the team's success in project deliverables.  
+                                    Built a land-price model from <strong>location</strong>, parcel, and attribute signals—using <strong>Oracle SQL</strong> for curated features and Python for modeling and evaluation.
+                                    <br><br>
+                                    Aimed at <strong>interpretable</strong> drivers of value so real estate workflows could move from anecdotal comps to repeatable, data-backed estimates.
                                 </p>
                             </div>
                         </a>
                     </div>
-                    <div class="col-md-3 text-center d-flex ftco-animate">
+                    <div class="col-md-3 text-left d-flex ftco-animate">
                         <a class="services-1 shadow">
                             <div class="desc">
-                                <h3 class="mc-4">Predicting Customer Lifetime Value</h3>
-                                <p><strong>Machine Learning • R </strong></p>
+                                <h3 class="mc-4">Interactive R Shiny Dashboard</h3>
+                                <p><strong>R • SHINY • DATA VISUALIZATION</strong></p>
                                 <p>
-                                    Built a machine learning model to forecast customer lifetime value in the telecommunications industry. Utilized historical data and advanced techniques to accurately predict long-term customer value, enabling targeted marketing and improved customer retention. Demonstrated expertise in data analysis, predictive modeling, and driving business growth through data-driven strategies. 
+                                    Shipped an <strong>R Shiny</strong> app for exploratory views and stakeholder-ready charts over prepared datasets—reactive inputs, clear summaries, and layout tuned for quick decisions without standing up a separate BI server.
+                                    <br><br>
+                                    Useful where analysts already lived in R and needed a thin, shareable UI on top of trusted transforms.
                                 </p>
                             </div>
                         </a>
                     </div>
-                    <div class="col-md-3 text-center d-flex ftco-animate">
+                    <div class="col-md-3 text-left d-flex ftco-animate">
                         <a class="services-1 shadow">
                             <div class="desc">
-                                <h3 class="mc-4">Land Price Prediction</h3>
-                                <p><strong>Machine Learning • ORACLE SQL • PYTHON</strong></p>
+                                <h3 class="mc-4">TV Show Comment Sentiment</h3>
+                                <p><strong>PYTHON • NLP • MONGODB • TEXT CLASSIFICATION</strong></p>
                                 <p>
-                                    Developed and deployed a highly accurate land price prediction model using machine learning algorithms. Leveraging my expertise in data analysis, feature engineering, and predictive modeling, I created a robust solution that accurately predict land prices based on relevant factors such as location, and property attributes. This model not only provided valuable insights for real estate professionals but also contributed to informed decision-making and improved profitability in the industry. 
-                                </p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-3 text-center d-flex ftco-animate">
-                        <a class="services-1 shadow">
-                            <div class="desc">
-                                <h3 class="mc-4">R-shiny Dashboard</h3>
-                                <p><strong>R-shiny • Dashboard • R</strong></p>
-                                <p>
-                                    Built a dashboard using R-shiny 
-                                </p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-3 text-center d-flex ftco-animate">
-                        <a class="services-1 shadow">
-                            <div class="desc">
-                                <h3 class="mc-4">NLP</h3>
-                                <p><strong> MongoDB • Python • NLP</strong></p>
-                                <p>
-                                    NLP Sentiment Analysis for TV Show Comments: Developed an NLP solution to analyze comments about TV shows and classify them as positive or negative sentiments. Demonstrated expertise in text mining, sentiment analysis, and machine learning, providing valuable insights into audience preferences and feedback in the entertainment industry. 
+                                    End-to-end <strong>sentiment</strong> pipeline for TV discussion comments: ingest and store flexible document shapes in <strong>MongoDB</strong>, normalize text, and train/evaluate classifiers for <strong>positive vs negative</strong> tone.
+                                    <br><br>
+                                    Surfaced aggregate audience reaction patterns—useful for content and programming teams comparing shows or episodes at a glance.
                                 </p>
                             </div>
                         </a>
