@@ -6,7 +6,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="description" content="Amir Saleem – Data Scientist and Python Developer. LLM development, machine learning, data engineering. Islamabad, Pakistan.">
-        <meta property="og:image" content="images/profile1.png">
+        <meta property="og:image" content="https://amirsaleem1990.github.io/amir.png">
         <meta property="og:title" content="Amir Saleem">
         <meta property="og:description" content="Data Scientist and Python Developer. LLM development, ML, data engineering. Islamabad, Pakistan.">
         <link href="index_files/css.css" rel="stylesheet">
@@ -69,6 +69,17 @@
                 max-width: 640px;
                 margin: 0 auto;
                 box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+            }
+            .hero-section .intro-box .hero-portrait {
+                display: block;
+                width: 300px;
+                height: 300px;
+                margin: 0 auto 1.25rem;
+                border-radius: 50%;
+                object-fit: cover;
+                object-position: center top;
+                border: 3px solid rgba(255, 255, 255, 0.35);
+                box-shadow: 0 8px 28px rgba(0, 0, 0, 0.35);
             }
             .hero-section .intro-box .subheading {
                 display: block;
@@ -151,6 +162,10 @@
             @media (max-width: 767.98px) {
                 .hero-section .intro-box h1 { font-size: calc(2.5rem + 2px); }
                 .hero-section .intro-box { padding: 1.75rem 1.25rem; }
+                .hero-section .intro-box .hero-portrait {
+                    width: 240px;
+                    height: 240px;
+                }
             }
         </style>
         <!-- Professional polish: visible gradient background (top lighter, bottom darker) -->
@@ -177,6 +192,135 @@
             .certifications-grid .resume-wrap { margin-bottom: 0; }
             @media (max-width: 767.98px) {
                 .certifications-grid { grid-template-columns: 1fr; }
+            }
+            .skills-showcase {
+                color: rgba(255, 255, 255, 0.92);
+                font-size: calc(0.95rem + 2px);
+                line-height: 1.5;
+            }
+            .skills-showcase .skills-lead {
+                font-size: calc(1.1rem + 2px);
+                line-height: 1.55;
+                color: rgba(255, 255, 255, 0.72);
+                max-width: none;
+                margin-bottom: 1.75rem;
+            }
+            .skills-showcase-grid {
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 1rem 1.5rem;
+                align-items: stretch;
+                justify-items: stretch;
+            }
+            @media (min-width: 768px) {
+                .skills-showcase-grid {
+                    grid-template-columns: repeat(2, minmax(0, 1fr));
+                }
+            }
+            .skills-showcase .skill-stat-card {
+                grid-column: 1 / -1;
+                display: flex;
+                flex-direction: column;
+                min-height: 0;
+                height: 100%;
+                background: rgba(255, 255, 255, 0.06);
+                backdrop-filter: blur(10px);
+                -webkit-backdrop-filter: blur(10px);
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                border-radius: 18px;
+                padding: 1.35rem 1.5rem;
+                box-shadow: 0 8px 28px rgba(0, 0, 0, 0.22);
+            }
+            .skills-showcase .skill-stat-card h3 {
+                color: #56CE5E;
+                font-size: calc(1.65rem + 5px);
+                font-weight: 600;
+                margin-bottom: 0.35rem;
+                text-align: center;
+            }
+            .skills-showcase .skill-stat-card__metric {
+                margin-bottom: 0.75rem;
+                font-size: calc(1rem + 2px);
+            }
+            .skills-showcase .skill-stat-card__number {
+                font-size: calc(2.15rem + 2px);
+                font-weight: 800;
+                color: #fff;
+                letter-spacing: -0.03em;
+                margin-right: 0.35rem;
+            }
+            .skills-showcase .skill-stat-card__accent {
+                color: #F96D00;
+                font-weight: 600;
+            }
+            .skills-showcase .skill-stat-card__timeline {
+                margin: 0.5rem 0 0.65rem;
+                max-width: 100%;
+            }
+            .skills-showcase .skill-stat-card__timeline svg {
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+            .skills-showcase .skill-stat-card__fine {
+                font-size: calc(1.05rem + 2px);
+                line-height: 1.55;
+                color: rgba(255, 255, 255, 0.62);
+                margin: 0;
+            }
+            .skills-showcase .skill-category-card {
+                display: flex;
+                flex-direction: column;
+                min-width: 0;
+                min-height: 0;
+                height: 100%;
+                background: rgba(255, 255, 255, 0.05);
+                border: 1px solid rgba(255, 255, 255, 0.09);
+                border-radius: 16px;
+                padding: 1.1rem 1.15rem 1.15rem;
+                box-shadow: 0 4px 18px rgba(0, 0, 0, 0.18);
+            }
+            .skills-showcase .skill-category-card h3 {
+                color: #56CE5E;
+                font-size: calc(1rem + 5px);
+                font-weight: 600;
+                margin: 0 0 0.85rem;
+                padding-bottom: 0.5rem;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+                text-align: center;
+            }
+            .skills-showcase .skill-tier {
+                margin-bottom: 0.75rem;
+            }
+            .skills-showcase .skill-tier:last-child {
+                margin-bottom: 0;
+            }
+            .skills-showcase .skill-tier__label {
+                display: block;
+                font-size: calc(0.7rem + 5px);
+                text-transform: uppercase;
+                letter-spacing: 0.12em;
+                font-weight: 600;
+                color: rgba(255, 255, 255, 0.5);
+                margin-bottom: 0.4rem;
+            }
+            .skills-showcase .skill-tier__label--daily { color: #56CE5E; }
+            .skills-showcase .skill-tier__label--regular { color: rgba(249, 109, 0, 0.95); }
+            .skills-showcase .skill-tier__label--occasional { color: rgba(255, 255, 255, 0.45); }
+            .skills-showcase .skill-tags {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 0.35rem 0.45rem;
+            }
+            .skills-showcase .skill-tag {
+                display: inline-block;
+                padding: 0.2rem 0.55rem;
+                font-size: calc(0.82rem + 8px);
+                line-height: 1.35;
+                background: rgba(0, 0, 0, 0.25);
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                border-radius: 999px;
+                color: rgba(255, 255, 255, 0.9);
             }
         </style>
         <!-- Professional header / navbar -->
@@ -353,13 +497,14 @@
                 <div class="row no-gutters slider-text align-items-center justify-content-center">
                     <div class="col-md-10 text-center">
                         <div class="intro-box">
+                            <img class="hero-portrait" src="amir.png" alt="Amir Saleem" width="300" height="300" decoding="async">
                             <span class="subheading">Hello! I am</span>
                             <h1 class="mb-4">Amir Saleem</h1>
                             <h2 class="mb-4">I'm a <span>Data Scientist</span></h2>
                             <p class="hero-tagline mb-4">Transforming raw data into actionable insights with Python, SQL &amp; machine learning.</p>
                             <p class="hero-location mb-4"><i class="fas fa-map-marker-alt"></i> Islamabad, Pakistan</p>
                             <p class="hero-ctas">
-                                <a href="#project-section" class="btn btn-primary py-3 px-4 hero-btn-primary">View Portfolio</a>
+                                <a href="AmirSaleem_DataScience_Resume.pdf" class="btn btn-primary py-3 px-4 hero-btn-primary" target="_blank" rel="noopener noreferrer">Resume</a>
                                 <a href="#experience-section" class="btn btn-white btn-outline-white py-3 px-4 hero-btn-outline">Experience</a>
                                 <a href="#contact-section" class="btn btn-white btn-outline-white py-3 px-4 hero-btn-outline">Contact Me</a>
                             </p>
@@ -370,7 +515,170 @@
             <div class="glyphicon glyphicon-arrow-down"></div>
         </section>
         <main id="main-content">
-        <!--     <section class="ftco-about img ftco-section ftco-no-pt ftco-no-pb" id="skills-section">
+        <section class="ftco-section ftco-no-pb goto-here" id="skills-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="page">
+                        <h2 class="heading">Skills</h2>
+                        <div class="skills-showcase">
+                            <p class="skills-lead">Tools and domains grouped by how often I use them—no invented percentages. One timeline below is anchored to real dates from my experience.</p>
+                            <div class="skills-showcase-grid">
+                                <article class="skill-stat-card" aria-labelledby="skill-stat-python-title">
+                                    <h3 id="skill-stat-python-title">Python</h3>
+                                    <p class="skill-stat-card__metric"><span class="skill-stat-card__number">8+</span> <span class="skill-stat-card__accent">years</span> in data-focused roles</p>
+                                    <div class="skill-stat-card__timeline" role="img" aria-label="Timeline from 2018 through 2026">
+                                        <svg viewBox="0 0 420 52" xmlns="http://www.w3.org/2000/svg" focusable="false">
+                                            <defs>
+                                                <linearGradient id="skills-python-timeline-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+                                                    <stop offset="0%" style="stop-color:#56CE5E;stop-opacity:0.45"/>
+                                                    <stop offset="100%" style="stop-color:#F96D00;stop-opacity:0.75"/>
+                                                </linearGradient>
+                                            </defs>
+                                            <text x="0" y="13" fill="rgba(255,255,255,0.5)" font-size="11" font-family="system-ui,sans-serif">2018</text>
+                                            <text x="372" y="13" fill="rgba(255,255,255,0.5)" font-size="11" font-family="system-ui,sans-serif">2026</text>
+                                            <rect x="0" y="22" width="420" height="11" rx="5.5" fill="rgba(255,255,255,0.07)"/>
+                                            <rect x="0" y="22" width="420" height="11" rx="5.5" fill="url(#skills-python-timeline-grad)"/>
+                                            <circle cx="414" cy="27.5" r="6.5" fill="#F96D00" stroke="rgba(255,255,255,0.25)" stroke-width="1"/>
+                                        </svg>
+                                    </div>
+                                    <p class="skill-stat-card__fine">From first data-science internship (2018) through present. The bar is a date span, not a skill score.</p>
+                                </article>
+                                <article class="skill-category-card">
+                                    <h3>Engineering</h3>
+                                    <div class="skill-tier">
+                                        <span class="skill-tier__label skill-tier__label--daily">Daily</span>
+                                        <div class="skill-tags">
+                                            <span class="skill-tag">Python</span>
+                                            <span class="skill-tag">Linux / Bash</span>
+                                            <span class="skill-tag">Git / GitHub</span>
+                                        </div>
+                                    </div>
+                                    <div class="skill-tier">
+                                        <span class="skill-tier__label skill-tier__label--occasional">Occasionally</span>
+                                        <div class="skill-tags">
+                                            <span class="skill-tag">FastAPI / Django</span>
+                                            <span class="skill-tag">Web Scraping</span>
+                                            <span class="skill-tag">Bitbucket / GitLab</span>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="skill-category-card">
+                                    <h3>Data science (core)</h3>
+                                    <div class="skill-tier">
+                                        <span class="skill-tier__label skill-tier__label--daily">Daily</span>
+                                        <div class="skill-tags">
+                                            <span class="skill-tag">SQL</span>
+                                            <span class="skill-tag">Problem Solving</span>
+                                        </div>
+                                    </div>
+                                    <div class="skill-tier">
+                                        <span class="skill-tier__label skill-tier__label--occasional">Occasionally</span>
+                                        <div class="skill-tags">
+                                            <span class="skill-tag">R</span>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="skill-category-card">
+                                    <h3>Data engineering</h3>
+                                    <div class="skill-tier">
+                                        <span class="skill-tier__label skill-tier__label--regular">Daily</span>
+                                        <div class="skill-tags">
+                                            <span class="skill-tag">PostgreSQL</span>
+                                            <span class="skill-tag">MySQL</span>
+                                        </div>
+                                    </div>
+                                    <div class="skill-tier">
+                                        <span class="skill-tier__label skill-tier__label--regular">Regularly</span>
+                                        <div class="skill-tags">
+                                            <span class="skill-tag">ETL</span>
+                                        </div>
+                                    </div>
+                                    <div class="skill-tier">
+                                        <span class="skill-tier__label skill-tier__label--occasional">Occasionally</span>
+                                        <div class="skill-tags">
+                                            <span class="skill-tag">Amazon S3</span>
+                                            <span class="skill-tag">Amazon Athena</span>
+                                            <span class="skill-tag">Amazon Redshift</span>
+                                            <span class="skill-tag">GraphQL</span>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="skill-category-card">
+                                    <h3>IDE &amp; notebooks</h3>
+                                    <div class="skill-tier">
+                                        <span class="skill-tier__label skill-tier__label--daily">Daily</span>
+                                        <div class="skill-tags">
+                                            <span class="skill-tag">Jupyter</span>
+                                            <span class="skill-tag">Cursor</span>
+                                            <span class="skill-tag">DBeaver</span>
+                                        </div>
+                                    </div>
+                                    <div class="skill-tier">
+                                        <span class="skill-tier__label skill-tier__label--occasional">Occasionally</span>
+                                        <div class="skill-tags">
+                                            <span class="skill-tag">Colab</span>
+                                            <span class="skill-tag">Workbench</span>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="skill-category-card">
+                                    <h3>Data analysis</h3>
+                                    <div class="skill-tier">
+                                        <span class="skill-tier__label skill-tier__label--daily">Daily</span>
+                                        <div class="skill-tags">
+                                            <span class="skill-tag">Pandas</span>
+                                            <span class="skill-tag">Google Sheets</span>
+                                            <span class="skill-tag">Pivot Tables</span>
+                                        </div>
+                                    </div>
+                                    <div class="skill-tier">
+                                        <span class="skill-tier__label skill-tier__label--regular">Regularly</span>
+                                        <div class="skill-tags">
+                                            <span class="skill-tag">Excel</span>
+                                            <span class="skill-tag">Data Mining</span>
+                                            <span class="skill-tag">Statistical Data Analysis</span>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="skill-category-card">
+                                    <h3>Machine learning</h3>
+                                    <div class="skill-tier">
+                                        <span class="skill-tier__label skill-tier__label--regular">Regularly</span>
+                                        <div class="skill-tags">
+                                            <span class="skill-tag">Scikit-learn</span>
+                                            <span class="skill-tag">PyTorch</span>
+                                            <span class="skill-tag">MLOps</span>
+                                            <span class="skill-tag">Predictive Analytics</span>
+                                            <span class="skill-tag">Vision</span>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="skill-category-card">
+                                    <h3>Cloud &amp; delivery</h3>
+                                    <div class="skill-tier">
+                                        <span class="skill-tier__label skill-tier__label--regular">Regularly</span>
+                                        <div class="skill-tags">
+                                            <span class="skill-tag">CI/CD</span>
+                                            <span class="skill-tag">GitHub Actions</span>
+                                        </div>
+                                    </div>
+                                    <div class="skill-tier">
+                                        <span class="skill-tier__label skill-tier__label--occasional">Occasionally</span>
+                                        <div class="skill-tags">
+                                            <span class="skill-tag">AWS Lambda</span>
+                                            <span class="skill-tag">AWS CloudWatch</span>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--     <section class="ftco-about img ftco-section ftco-no-pt ftco-no-pb" id="about-section-old">
             <div class="container">
             	<div class="row d-flex no-gutters">
             		<div class="col-md-6 col-lg-6 d-flex">
@@ -1573,30 +1881,8 @@
                             </div>
                         </div>
                         </div>
-                        <div id="skills-section">
-                            <div id="page-3" class="page three">
-                                <h2 class="heading">Skills</h2>
-                                <div style="font-size: 23px;">
-                                    <li><span style="color: #56CE5E; font-weight: bold;">Data Science</span>: Experience in data analysis, data mining, modeling, and deploying data pipelines.</li>
-                                    <li><span style="color: #56CE5E; font-weight: bold;">Machine Learning</span>: Developing predictive models and implementing machine learning algorithms.</li>
-                                    <li><span style="color: #56CE5E; font-weight: bold;">LLM Development & Collaboration</span>: Formulating complex questions (EDA, statistics, ML, logic), developing code solutions with LLMs, and collaborating to improve model performance through feedback and validation.</li>
-                                    <li><span style="color: #56CE5E; font-weight: bold;">AI / LLM Evaluation</span>: Evaluating LLM-generated code with rubrics, designing bug-planting scenarios in production codebases, and benchmarking debugging capabilities (e.g. SWE-Bench).</li>
-                                    <li><span style="color: #56CE5E; font-weight: bold;">Data Synthesis for AI</span>: Generating and curating large-scale datasets (e.g. 100k+ visualizations) to enhance LLM proficiency in data visualization and analysis.</li>
-                                    <li><span style="color: #56CE5E; font-weight: bold;">Data Analysis</span>: Gathering, cleaning, and analyzing data to extract insights and support decision-making.</li>
-                                    <li><span style="color: #56CE5E; font-weight: bold;">Python Programming</span>: Proficient in Python for data analysis, scripting, and automation tasks.</li>
-                                    <li><span style="color: #56CE5E; font-weight: bold;">R Programming</span>: Good in R for data analysis, and ML modeling.</li>
-                                    <li><span style="color: #56CE5E; font-weight: bold;">SQL</span>: Skilled in querying and managing relational databases.</li>
-                                    <li><span style="color: #56CE5E; font-weight: bold;">ETL Processes</span>: Designing and implementing Extract, Transform, Load processes for data integration.</li>
-                                    <li><span style="color: #56CE5E; font-weight: bold;">Linux</span>: Experience working in Linux environments, including scripting and system management.</li>
-                                    <li><span style="color: #56CE5E; font-weight: bold;">Django</span>: Developing web applications using the Django framework.</li>
-                                    <li><span style="color: #56CE5E; font-weight: bold;">Bash Scripting</span>: Automating tasks and managing systems using Bash scripts.</li>
-                                    <li><span style="color: #56CE5E; font-weight: bold;">Data Visualization</span>: Creating visual representations of data to communicate insights effectively.</li>
-                                    <li><span style="color: #56CE5E; font-weight: bold;">Web Scraping</span>: Extracting data from websites using tools like BeautifulSoup.</li>
-                                    <li><span style="color: #56CE5E; font-weight: bold;">Cloud Computing</span>: Utilizing cloud services, including Azure Functions, for scalable computing solutions.</li>
-                                    <li><span style="color: #56CE5E; font-weight: bold;">Version Control</span>: Managing code versions and collaboration using Git.</li>
-                                </div>
-                            </div>
-                        </div>
+                    </div>
+                </div>
                 </div>
             </div>
         </section>
