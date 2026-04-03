@@ -358,8 +358,9 @@ window.onload = function() {
 // this makes the height of each page equal to the height of the window
 // $('.page').css('height', $( window ).height());
 
-// scrollspy section
+// scrollspy section (left sidebar #navi; skip if removed)
 (function($){
+  if (!$('#navi').length) return;
   //variable that will hold the href attr of the links in the menu
   var sections = [];
   //variable that stores the id of the section
