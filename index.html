@@ -2297,11 +2297,11 @@
                         </div>
                         <div class="resume-wrap cert-card d-flex ftco-animate fadeInUp ftco-animated">
                             <a class="cert-card__thumb" href="https://www.coursera.org/account/accomplishments/verify/B8KW7D4VMV9G" target="_blank">
-                                <img class="cert-card__img" src="https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~B8KW7D4VMV9G/CERTIFICATE_LANDING_PAGE~B8KW7D4VMV9G.jpeg" alt="The Data Scientist’s Toolbox" loading="lazy" width="640" height="360" onerror="this.onerror=null;this.src='index_files/learning.png';">
+                                <img class="cert-card__img" src="https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~B8KW7D4VMV9G/CERTIFICATE_LANDING_PAGE~B8KW7D4VMV9G.jpeg" alt="The Data Scientist's Toolbox" loading="lazy" width="640" height="360" onerror="this.onerror=null;this.src='index_files/learning.png';">
                             </a>
                             <div class="text pl-3 cert-card__body">
 
-                                <h2>The Data Scientist’s Toolbox</h2>
+                                <h2>The Data Scientist's Toolbox</h2>
                                 <!--
 
                                 <span class="position">John Hopkins University</span>
@@ -2544,6 +2544,29 @@
                                 </p>
                                 <p>
                                     The system is designed for scalability, reliability, and continuous model improvement with minimal manual intervention.
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-12 text-left d-flex ftco-animate fadeInUp ftco-animated">
+                        <a class="services-1 shadow w-100" href="https://github.com/amirsaleem1990/ollama-llm-streamlit-agent" target="_blank" rel="noopener noreferrer">
+                            <div class="desc">
+                                <h3 class="mc-4">Ollama LLM Streamlit Agent</h3>
+                                <p><strong>PYTHON • OLLAMA • LANGCHAIN • LANGGRAPH • STREAMLIT • CHROMA • RAG • VISION (LLAVA)</strong></p>
+                                <p>
+                                    Built a <strong>local-only</strong> assistant with <strong>no cloud LLM API keys</strong>: <strong>Ollama</strong> powers chat, embeddings, and vision; <strong>LangChain</strong> / <strong>LangGraph</strong> compile a tool-calling agent with memory.
+                                    <br><br>
+                                    Ships both a <strong>Streamlit</strong> browser UI and a <strong>terminal CLI</strong>. Optional <strong>RAG</strong> uses in-memory <strong>Chroma</strong> over user-provided text; tools cover calculator, semantic <strong>search_documents</strong>, and <strong>analyze_image</strong> (paths with <strong>~</strong> / env expansion, pixels sent to the vision model via proper multimodal messages).
+                                </p>
+                                <p>
+                                    <strong>Operational guardrails:</strong>
+                                    <br>
+                                    • On startup, the app calls Ollama's <strong>/api/tags</strong> and <strong>errors clearly</strong> if a configured model (chat, embed, vision) is not pulled—pointing to the exact <strong>ollama pull</strong> commands
+                                    <br>
+                                    • Structured logging, per-thread checkpointer, <strong>.env</strong> via <strong>python-dotenv</strong>, and <strong>pytest</strong> coverage for paths, tools, and RAG wiring
+                                </p>
+                                <p>
+                                    Open-source on GitHub with README, <strong>Python 3.12.3</strong>-tested setup, and notes on security (e.g. sandboxing <strong>eval</strong> in the calculator tool for untrusted use).
                                 </p>
                             </div>
                         </a>
