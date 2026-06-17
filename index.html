@@ -2508,6 +2508,26 @@
                 </div>
                 <div class="row">
                     <div class="col-md-12 text-left d-flex ftco-animate fadeInUp ftco-animated">
+                        <a class="services-1 shadow w-100" href="https://github.com/amirsaleem1990/auto-analyst-agent" target="_blank" rel="noopener noreferrer">
+                            <div class="desc">
+                                <h3 class="mc-4">Auto-Analyst-Agent: LLM Agent for Schema-Agnostic Data Analysis</h3>
+                                <p><strong>PYTHON • PANDAS • STREAMLIT • OPENROUTER API • LLM TOOL-CALLING • CLI</strong></p>
+                                <p>
+                                    Built an AI-powered data analyst that profiles and explains any tabular dataset (CSV, TSV, JSON, Parquet, Excel) without assuming column names, schema, or business rules. The system builds a schema-agnostic profile — shape, dtypes, samples, descriptive statistics — from the full dataset, then hands control to an LLM agent that explores a sampled subset through a `run_code` tool, iteratively running pandas code and reading back results before writing a markdown report covering overview, patterns, findings, risks, and recommended actions.
+                                    <br>
+                                    <strong>Resilient LLM orchestration:</strong> • Automatic retry on rate-limited requests, parsing provider-level 429 responses and retry-after metadata • Fallback across a rotating list of free, tool-calling-capable OpenRouter models when the active model is rate-limited or unavailable, fetched live from OpenRouter's models API instead of hardcoded.
+                                    <br>
+                                    Built a multi-step agentic exploration loop where the LLM repeatedly decides what to inspect next and calls pandas through a sandboxed tool interface, bounded by a configurable max-tries limit to prevent runaway loops, with explicit exception chaining (`raise ... from`) preserving the original provider error when every fallback model is exhausted.
+                                    <br>
+                                    <strong>Dual interface for transparency</strong>: a CLI for scripted/batch runs, and a Streamlit web UI exposing live tool-call visibility — purpose, generated code, and output — for every exploration step, alongside configurable model choice, sample size, and turn limits.
+                                    <br>
+                                    The system is designed to generalize across unknown datasets with minimal manual setup, grounding every conclusion in code-executed evidence rather than assumptions, while remaining usable end-to-end on free-tier LLM access despite per-model rate limits.
+                                    <br>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-12 text-left d-flex ftco-animate fadeInUp ftco-animated">
                         <a class="services-1 shadow w-100">
                             <div class="desc">
                                 <h3 class="mc-4">End-to-End MLOps Pipeline for Credit Default Prediction</h3>
